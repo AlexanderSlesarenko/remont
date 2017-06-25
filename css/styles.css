@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "MuseoSansRegular";
+  src: url("../fonts/MuseoSansRegular.eot");
+  src: url("../fonts/MuseoSansRegular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/MuseoSansRegular.woff") format("woff");
+  src: url("../fonts/MuseoSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+body {
+  font-family: "MuseoSansRegular", Helvetica, Arial, sans-serif;
+  margin: 0; }
+
+#nav {
+  background-color: grey;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  position: fixed;
+  z-index: 1000;
+  height: 60px;
+  width: 100%;
+  top: -70px; }
+  #nav.visible {
+    top: 0;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3); }
+
+#top {
+  background: 50% 0 url(../img/1.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  height: 100vh; }
+
+button[type="submit"] {
+  border-radius: 0 !important;
+  transition: background-color 0.24s ease-out;
+  -webkit-transition: background-color 0.24s ease-out;
+  -moz-transition: background-color 0.24s ease-out;
+  -o-transition: background-color 0.24s ease-out;
+  outline: 0 !important;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-appearance: button;
+  text-transform: none; }
+  button[type="submit"]:hover, button[type="submit"]:focus, button[type="submit"]:active {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+    text-decoration: none; }
+  button[type="submit"]:focus {
+    outline-offset: -2px; }
+  button[type="submit"]:active {
+    background-image: none; }
+
+/*# sourceMappingURL=styles.css.map */
