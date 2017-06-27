@@ -41,11 +41,11 @@ body {
     background-size: contain; }
   #nav .menu {
     margin-right: 20px;
-    margin-top: 10px;
     float: right;
     display: inline-block; }
     #nav .menu .menu_item {
-      display: inline-block; }
+      display: inline-block;
+      line-height: 60px; }
   #nav * {
     font-family: "MuseoSansMedium", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
