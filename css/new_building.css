@@ -48,6 +48,15 @@ body {
       font-size: 14px; }
       #nav .menu .menu_item.option {
         margin-right: 20px; }
+        #nav .menu .menu_item.option.phone * {
+          color: #222; }
+        #nav .menu .menu_item.option.phone a {
+          text-decoration: none; }
+          #nav .menu .menu_item.option.phone a img {
+            vertical-align: middle; }
+        #nav .menu .menu_item.option.phone img {
+          height: 20px;
+          width: 20px; }
         #nav .menu .menu_item.option span {
           color: #8c8c8c;
           cursor: pointer;
