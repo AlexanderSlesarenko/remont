@@ -7,11 +7,11 @@
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: "MuseoSansMedium";
-  src: url("../fonts/MuseoSansMedium.eot");
-  src: url("../fonts/MuseoSansMedium.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/MuseoSansMedium.woff") format("woff");
-  src: url("../fonts/MuseoSansMedium.ttf") format("truetype");
+  font-family: "MuseoSansBold";
+  src: url("../fonts/MuseoSansBold.eot");
+  src: url("../fonts/MuseoSansBold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/MuseoSansBold.woff") format("woff");
+  src: url("../fonts/MuseoSansBold.ttf") format("truetype");
   font-style: normal; }
 body {
   margin: 0; }
@@ -49,9 +49,10 @@ body {
       #nav .menu .menu_item button {
         font-size: 14px;
         line-height: 1.8;
-        margin-bottom: 3px; }
+        margin-bottom: 3px;
+        border-radius: 6px !important; }
   #nav * {
-    font-family: "MuseoSansMedium", Helvetica, Arial, sans-serif;
+    font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
 
 #top {
