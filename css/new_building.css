@@ -41,16 +41,17 @@ body {
     background-size: contain; }
   #nav .menu {
     margin-right: 20px;
-    float: right;
-    display: inline-block; }
+    float: right; }
     #nav .menu .menu_item {
       display: inline-block;
-      line-height: 60px; }
+      line-height: 60px;
+      font-size: 14px; }
       #nav .menu .menu_item button {
         font-size: 14px;
         line-height: 1.8;
-        margin-bottom: 3px;
-        border-radius: 6px !important; }
+        margin-bottom: 1px;
+        border-radius: 6px !important;
+        padding: 5px 15px; }
   #nav * {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
@@ -73,8 +74,7 @@ button {
   font-size: 12px;
   line-height: 1.5;
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #20a052;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -94,8 +94,7 @@ button {
   text-transform: none; }
   button:hover, button:focus, button:active {
     color: #fff;
-    background-color: #449d44;
-    border-color: #449d44;
+    background-color: #4db375;
     text-decoration: none; }
   button:focus {
     outline-offset: -2px; }
