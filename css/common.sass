@@ -1,3 +1,12 @@
+=logo()
+  display: inline-block
+  height: 40px
+  width: 130px
+  margin-left: 20px
+  margin-top: 10px
+  background-repeat: no-repeat
+  background-size: contain
+
 @font-face
   font-family: "MuseoSansRegular"
   src: url("../fonts/MuseoSansRegular.eot")
@@ -32,14 +41,8 @@ body
     top: 0
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.3)
   .logo
-    display: inline-block
-    height: 40px
-    width: 130px
-    margin-left: 20px
-    margin-top: 10px
     background-image: url(../img/logo.png)
-    background-repeat: no-repeat
-    background-size: contain
+    +logo()
   .menu
     margin-right: 20px
     float: right
@@ -77,15 +80,15 @@ body
   *
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
     letter-spacing: .8px
-#top
+#first_block
   background: 50% 0 url(../img/1.jpg) no-repeat
   background-size: cover
-  //padding: 98px 0 119px
   position: relative
-  text-align: center
-  //min-height: 700px
   height: 100vh
-
+  .header
+    .logo
+      +logo()
+      background-image: url(../img/logo.png)
 button
   border-radius: 4px !important
   transition: background-color 0.3s

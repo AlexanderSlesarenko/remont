@@ -31,12 +31,12 @@ body {
     top: 0;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3); }
   #nav .logo {
+    background-image: url(../img/logo.png);
     display: inline-block;
     height: 40px;
     width: 130px;
     margin-left: 20px;
     margin-top: 10px;
-    background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: contain; }
   #nav .menu {
@@ -76,12 +76,20 @@ body {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
 
-#top {
+#first_block {
   background: 50% 0 url(../img/1.jpg) no-repeat;
   background-size: cover;
   position: relative;
-  text-align: center;
   height: 100vh; }
+  #first_block .header .logo {
+    display: inline-block;
+    height: 40px;
+    width: 130px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/logo.png); }
 
 button {
   border-radius: 4px !important;
