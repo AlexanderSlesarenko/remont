@@ -9,8 +9,14 @@ $(document).ready(function(){
     set_form_submit_listener();
     set_phone_mask();
     set_toastr_options();
+    set_buttons_blur();
 });
 
+function set_buttons_blur() {
+  $("button").click(function(event) {
+    $(this).blur();
+  });
+}
 function set_toastr_options() {
     toastr.options = {
         "positionClass": "toast-top-center",
