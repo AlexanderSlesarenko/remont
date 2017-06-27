@@ -6,9 +6,17 @@
   src: url("../fonts/MuseoSansRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+@font-face {
+  font-family: "MuseoSansMedium";
+  src: url("../fonts/MuseoSansMedium.eot");
+  src: url("../fonts/MuseoSansMedium.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/MuseoSansMedium.woff") format("woff");
+  src: url("../fonts/MuseoSansMedium.ttf") format("truetype");
+  font-style: normal; }
 body {
-  font-family: "MuseoSansRegular", Helvetica, Arial, sans-serif;
   margin: 0; }
+  body * {
+    font-family: "MuseoSansRegular", Helvetica, Arial, sans-serif; }
 
 #nav {
   background-color: #ffffff;
@@ -35,6 +43,8 @@ body {
     margin-right: 20px;
     margin-top: 10px;
     float: right; }
+  #nav * {
+    font-family: "MuseoSansMedium", Helvetica, Arial, sans-serif; }
 
 #top {
   background: 50% 0 url(../img/1.jpg) no-repeat;
@@ -76,7 +86,7 @@ button {
   button:hover, button:focus, button:active {
     color: #fff;
     background-color: #449d44;
-    border-color: #398439;
+    border-color: #449d44;
     text-decoration: none; }
   button:focus {
     outline-offset: -2px; }
