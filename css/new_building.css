@@ -31,6 +31,10 @@ body {
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: contain; }
+  #nav .make_order {
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right; }
 
 #top {
   background: 50% 0 url(../img/1.jpg) no-repeat;
@@ -39,8 +43,8 @@ body {
   text-align: center;
   height: 100vh; }
 
-button[type="submit"] {
-  border-radius: 0 !important;
+button {
+  border-radius: 4px !important;
   transition: background-color 0.24s ease-out;
   -webkit-transition: background-color 0.24s ease-out;
   -moz-transition: background-color 0.24s ease-out;
@@ -69,14 +73,14 @@ button[type="submit"] {
   border: 1px solid transparent;
   -webkit-appearance: button;
   text-transform: none; }
-  button[type="submit"]:hover, button[type="submit"]:focus, button[type="submit"]:active {
+  button:hover, button:focus, button:active {
     color: #fff;
     background-color: #449d44;
     border-color: #398439;
     text-decoration: none; }
-  button[type="submit"]:focus {
+  button:focus {
     outline-offset: -2px; }
-  button[type="submit"]:active {
+  button:active {
     background-image: none; }
 
 /*# sourceMappingURL=new_building.css.map */

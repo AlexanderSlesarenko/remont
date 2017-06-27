@@ -32,6 +32,10 @@ body
     background-image: url(../img/logo.png)
     background-repeat: no-repeat
     background-size: contain
+  .make_order
+    margin-right: 20px
+    margin-top: 10px
+    float: right
 #top
   background: 50% 0 url(../img/1.jpg) no-repeat
   background-size: cover
@@ -42,44 +46,43 @@ body
   height: 100vh
 
 button
-  &[type="submit"]
-    border-radius: 0 !important
-    transition: background-color 0.24s ease-out
-    -webkit-transition: background-color 0.24s ease-out
-    -moz-transition: background-color 0.24s ease-out
-    -o-transition: background-color 0.24s ease-out
-    outline: 0 !important
-    padding: 5px 10px
-    font-size: 12px
-    line-height: 1.5
+  border-radius: 4px !important
+  transition: background-color 0.24s ease-out
+  -webkit-transition: background-color 0.24s ease-out
+  -moz-transition: background-color 0.24s ease-out
+  -o-transition: background-color 0.24s ease-out
+  outline: 0 !important
+  padding: 5px 10px
+  font-size: 12px
+  line-height: 1.5
+  color: #fff
+  background-color: #5cb85c
+  border-color: #4cae4c
+  display: inline-block
+  margin-bottom: 0
+  font-weight: normal
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background-image: none
+  border: 1px solid transparent
+  -webkit-appearance: button
+  text-transform: none
+  &:hover,
+  &:focus,
+  &:active
     color: #fff
-    background-color: #5cb85c
-    border-color: #4cae4c
-    display: inline-block
-    margin-bottom: 0
-    font-weight: normal
-    text-align: center
-    white-space: nowrap
-    vertical-align: middle
-    -ms-touch-action: manipulation
-    touch-action: manipulation
-    cursor: pointer
-    -webkit-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
-    user-select: none
+    background-color: #449d44
+    border-color: #398439
+    text-decoration: none
+  &:focus
+    outline-offset: -2px
+  &:active
     background-image: none
-    border: 1px solid transparent
-    -webkit-appearance: button
-    text-transform: none
-    &:hover,
-    &:focus,
-    &:active
-      color: #fff
-      background-color: #449d44
-      border-color: #398439
-      text-decoration: none
-    &:focus
-      outline-offset: -2px
-    &:active
-      background-image: none
