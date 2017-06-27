@@ -46,6 +46,10 @@ body {
     #nav .menu .menu_item {
       display: inline-block;
       line-height: 60px; }
+      #nav .menu .menu_item button {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 3px; }
   #nav * {
     font-family: "MuseoSansMedium", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
