@@ -90,7 +90,7 @@ body
   background: 50% 0 url(../img/1.jpg) no-repeat
   background-size: cover
   position: relative
-  height: 100vh
+  height: 90vh
   .header
     .logo
       +logo()
@@ -111,6 +111,30 @@ body
           &.phone
             *
               color: #fae12e
+  .top_pointer
+    display: block
+    -webkit-animation: _1SPxwonwfe0SdBCvZcLsRX 1s infinite
+    animation: _1SPxwonwfe0SdBCvZcLsRX 1s infinite
+    margin: 6px auto 0
+    position: relative
+    height: 36px
+    width: 36px
+    color: #000
+    border-radius: 100px
+    border: 1px solid #d9d9d9
+    background: #fff
+    &:before
+      content: ""
+      position: absolute
+      width: 12px
+      height: 12px
+      top: 9px
+      left: 11px
+      -webkit-transform: rotate(45deg)
+      transform: rotate(45deg)
+      border: 2px solid #000
+      border-left: none
+      border-top: none
 button
   border-radius: 4px !important
   transition: background-color 0.3s
@@ -150,3 +174,11 @@ button
     outline-offset: -2px
   &:active
     background-image: none
+
+@keyframes _1SPxwonwfe0SdBCvZcLsRX
+  0%
+    top: 0
+  50%
+    top: 6px
+  to
+    top: 0
