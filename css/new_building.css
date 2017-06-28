@@ -58,20 +58,21 @@ body {
           height: 20px;
           width: 20px; }
         #nav .menu .menu_item.option span {
-          color: #8c8c8c;
-          cursor: pointer;
-          transition: color 0.3s;
-          -webkit-transition: color 0.3s;
-          -moz-transition: color 0.3s;
-          -o-transition: color 0.3s; }
-          #nav .menu .menu_item.option span:hover {
-            color: #222; }
+          cursor: pointer; }
       #nav .menu .menu_item button {
         font-size: 14px;
         line-height: 1.8;
         margin-bottom: 1px;
         border-radius: 6px !important;
         padding: 5px 15px; }
+    #nav .menu .menu_item.option span {
+      color: #8c8c8c;
+      transition: color 0.3s;
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s; }
+      #nav .menu .menu_item.option span:hover {
+        color: #222; }
   #nav * {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
@@ -93,6 +94,9 @@ body {
   #first_block .header .menu {
     margin-right: 20px;
     float: right; }
+    #first_block .header .menu * {
+      font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+      letter-spacing: 0.8px; }
     #first_block .header .menu .menu_item {
       display: inline-block;
       line-height: 61px;
@@ -109,20 +113,19 @@ body {
           height: 20px;
           width: 20px; }
         #first_block .header .menu .menu_item.option span {
-          color: #8c8c8c;
-          cursor: pointer;
-          transition: color 0.3s;
-          -webkit-transition: color 0.3s;
-          -moz-transition: color 0.3s;
-          -o-transition: color 0.3s; }
-          #first_block .header .menu .menu_item.option span:hover {
-            color: #222; }
+          cursor: pointer; }
       #first_block .header .menu .menu_item button {
         font-size: 14px;
         line-height: 1.8;
         margin-bottom: 1px;
         border-radius: 6px !important;
         padding: 5px 15px; }
+    #first_block .header .menu .menu_item.option * {
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
+    #first_block .header .menu .menu_item.option span {
+      color: #ffffff; }
+    #first_block .header .menu .menu_item.option.phone * {
+      color: #fae12e; }
 
 button {
   border-radius: 4px !important;
