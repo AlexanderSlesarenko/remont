@@ -90,6 +90,39 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../img/logo.png); }
+  #first_block .header .menu {
+    margin-right: 20px;
+    float: right; }
+    #first_block .header .menu .menu_item {
+      display: inline-block;
+      line-height: 61px;
+      font-size: 14px; }
+      #first_block .header .menu .menu_item.option {
+        margin-right: 20px; }
+        #first_block .header .menu .menu_item.option.phone * {
+          color: #222; }
+        #first_block .header .menu .menu_item.option.phone a {
+          text-decoration: none; }
+          #first_block .header .menu .menu_item.option.phone a img {
+            vertical-align: middle; }
+        #first_block .header .menu .menu_item.option.phone img {
+          height: 20px;
+          width: 20px; }
+        #first_block .header .menu .menu_item.option span {
+          color: #8c8c8c;
+          cursor: pointer;
+          transition: color 0.3s;
+          -webkit-transition: color 0.3s;
+          -moz-transition: color 0.3s;
+          -o-transition: color 0.3s; }
+          #first_block .header .menu .menu_item.option span:hover {
+            color: #222; }
+      #first_block .header .menu .menu_item button {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 1px;
+        border-radius: 6px !important;
+        padding: 5px 15px; }
 
 button {
   border-radius: 4px !important;
