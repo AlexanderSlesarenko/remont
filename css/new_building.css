@@ -190,6 +190,13 @@ body {
         border-left: none;
         border-top: none; }
 
+.block.grey {
+  background-color: #f8f8f8; }
+.block .wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 100px 0; }
+
 button {
   border-radius: 4px !important;
   transition: background-color 0.3s;
