@@ -142,6 +142,18 @@ body {
       line-height: 50px; }
     #first_block .content .moto h1 {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif; }
+    #first_block .content .form {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+      text-align: center;
+      border-radius: 6px;
+      margin-top: 222px; }
+      #first_block .content .form button {
+        height: 40px;
+        font-size: 16px;
+        padding-left: 16px;
+        padding-right: 16px; }
   #first_block .top_pointer_wrapper {
     margin-left: -100px;
     position: absolute;
