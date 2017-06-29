@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "MuseoSansRegular";
-  src: url("../fonts/MuseoSansRegular.eot");
-  src: url("../fonts/MuseoSansRegular.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/MuseoSansRegular.woff") format("woff");
-  src: url("../fonts/MuseoSansRegular.ttf") format("truetype");
+  font-family: "MuseoSansMedium";
+  src: url("../fonts/MuseoSansMedium.eot");
+  src: url("../fonts/MuseoSansMedium.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/MuseoSansMedium.woff") format("woff");
+  src: url("../fonts/MuseoSansMedium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 @font-face {
@@ -16,7 +16,7 @@
 body {
   margin: 0; }
   body * {
-    font-family: "MuseoSansRegular", Helvetica, Arial, sans-serif; }
+    font-family: "MuseoSansMedium", Helvetica, Arial, sans-serif; }
 
 #nav {
   background-color: #ffffff;
@@ -131,7 +131,11 @@ body {
   #first_block .moto * {
     color: #fff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    display: inline; }
+    display: inline;
+    font-size: 40px;
+    line-height: 50px; }
+  #first_block .moto h1 {
+    font-family: "MuseoSansBold", Helvetica, Arial, sans-serif; }
   #first_block .top_pointer_wrapper {
     margin-left: -100px;
     position: absolute;
