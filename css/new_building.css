@@ -204,6 +204,9 @@ body {
     font-size: 40px;
     color: #222;
     margin: 0; }
+  .block .wrapper #faq {
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 40px; }
   .block .wrapper .sub_header {
     margin-top: 22px;
     padding: 0 80px;
@@ -325,8 +328,8 @@ input {
     content: "";
     background: url(../img/button_arrow_down.svg) 0 0 no-repeat;
     float: right;
-    width: 11px;
-    height: 6px;
+    width: 31px;
+    height: 18px;
     -webkit-transition: -webkit-transform 0.1s ease-out;
     transition: transform 0.4s ease-out; }
   .accordion_header.active:after {
