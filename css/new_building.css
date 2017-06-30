@@ -250,6 +250,11 @@ body {
         height: 160px;
         width: 160px;
         margin-top: 30px; }
+      .block .wrapper #personnel .item .descr {
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 16px;
+        color: #222; }
       .block .wrapper #personnel .item:first-of-type .image {
         background-image: url(../img/worker_1.PNG); }
       .block .wrapper #personnel .item:nth-of-type(2) .image {
