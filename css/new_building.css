@@ -316,7 +316,7 @@ input {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(32, 160, 82, 0.64);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(32, 160, 82, 0.64); }
 
-.accordion {
+.accordion_header {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -326,9 +326,9 @@ input {
   border: none;
   outline: none;
   transition: 0.4s; }
-  .accordion.active, .accordion:hover {
+  .accordion_header.active, .accordion_header:hover {
     background-color: #ddd; }
-  .accordion:after {
+  .accordion_header:after {
     content: "";
     background: url(../img/button_arrow_down.svg) 0 0 no-repeat;
     float: right;
@@ -336,10 +336,10 @@ input {
     height: 6px;
     -webkit-transition: -webkit-transform 0.1s ease-out;
     transition: transform 0.4s ease-out; }
-  .accordion.active:after {
+  .accordion_header.active:after {
     transform: rotate(180deg); }
 
-.panel {
+.accordion_content {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
