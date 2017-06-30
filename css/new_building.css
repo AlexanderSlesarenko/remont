@@ -212,6 +212,15 @@ body {
     letter-spacing: 0;
     line-height: 28px;
     color: #222; }
+  .block .wrapper #personnel {
+    margin-top: 70px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    transition: all 0.8s ease; }
 
 button {
   border-radius: 4px !important;
