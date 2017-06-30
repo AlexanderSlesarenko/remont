@@ -316,6 +316,36 @@ input {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(32, 160, 82, 0.64);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(32, 160, 82, 0.64); }
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s; }
+  .accordion.active, .accordion:hover {
+    background-color: #ddd; }
+  .accordion:after {
+    content: "";
+    background: url(../img/button_arrow_down.svg) 0 0 no-repeat;
+    float: right;
+    width: 11px;
+    height: 6px;
+    -webkit-transition: -webkit-transform 0.1s ease-out;
+    transition: transform 0.4s ease-out; }
+  .accordion.active:after {
+    transform: rotate(180deg); }
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out; }
+
 @keyframes _1SPxwonwfe0SdBCvZcLsRX {
   0% {
     top: 0; }

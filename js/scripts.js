@@ -11,8 +11,25 @@ $(document).ready(function(){
     set_toastr_options();
     set_buttons_blur();
     set_scroll_down();
+    set_accordion();
 });
 
+function set_accordion() {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      }
+    }
+}
 function set_scroll_down() {
   $(".top_pointer_wrapper").click(function() {
     $('html, body').animate({
