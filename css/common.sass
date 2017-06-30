@@ -226,6 +226,24 @@ body
           border-bottom: 1px solid #d9d9d9
           background: hsla(0,0%,97%,.5)
           border-radius: 6px 6px 0 0
+        .image
+          background: 70% 0 no-repeat
+          background-size: 190px
+          border-radius: 100px
+          margin: 0 auto
+          opacity: 1
+          height: 160px
+          width: 160px
+          margin-top: 30px
+        &:first-of-type
+          .image
+            background-image: url(../img/worker_1.PNG)
+        &:nth-of-type(2)
+          .image
+            background-image: url(../img/worker_2.PNG)
+        &:last-of-type
+          .image
+            background-image: url(../img/worker_3.PNG)
 button
   border-radius: 4px !important
   transition: background-color 0.3s

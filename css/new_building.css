@@ -241,6 +241,21 @@ body {
         border-bottom: 1px solid #d9d9d9;
         background: rgba(247, 247, 247, 0.5);
         border-radius: 6px 6px 0 0; }
+      .block .wrapper #personnel .item .image {
+        background: 70% 0 no-repeat;
+        background-size: 190px;
+        border-radius: 100px;
+        margin: 0 auto;
+        opacity: 1;
+        height: 160px;
+        width: 160px;
+        margin-top: 30px; }
+      .block .wrapper #personnel .item:first-of-type .image {
+        background-image: url(../img/worker_1.PNG); }
+      .block .wrapper #personnel .item:nth-of-type(2) .image {
+        background-image: url(../img/worker_2.PNG); }
+      .block .wrapper #personnel .item:last-of-type .image {
+        background-image: url(../img/worker_3.PNG); }
 
 button {
   border-radius: 4px !important;
