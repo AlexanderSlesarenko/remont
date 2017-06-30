@@ -10,8 +10,16 @@ $(document).ready(function(){
     set_phone_mask();
     set_toastr_options();
     set_buttons_blur();
+    set_scroll_down();
 });
 
+function set_scroll_down() {
+  $(".top_pointer_wrapper").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".block.second").offset().top - 60
+    }, 500);
+  });
+}
 function set_buttons_blur() {
   $("button").click(function(event) {
     $(this).blur();
