@@ -196,7 +196,7 @@ body {
   max-width: 940px;
   margin: 0 auto;
   padding: 100px 0; }
-  .block .wrapper .header {
+  .block .wrapper > .header {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     text-align: center;
     line-height: 40px;
@@ -221,6 +221,26 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     transition: all 0.8s ease; }
+    .block .wrapper #personnel .item {
+      transition: all 0.8s ease;
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin-bottom: 50px;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid #d9d9d9;
+      color: #000; }
+      .block .wrapper #personnel .item .header {
+        font-size: 14px;
+        font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+        color: #000;
+        line-height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        border-bottom: 1px solid #d9d9d9;
+        background: rgba(247, 247, 247, 0.5);
+        border-radius: 6px 6px 0 0; }
 
 button {
   border-radius: 4px !important;

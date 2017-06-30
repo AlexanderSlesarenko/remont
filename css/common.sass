@@ -181,7 +181,7 @@ body
     max-width: 940px
     margin: 0 auto
     padding: 100px 0
-    .header
+    & > .header
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
       text-align: center
       line-height: 40px
@@ -206,6 +206,26 @@ body
       -ms-flex-pack: justify
       justify-content: space-between
       transition: all .8s ease
+      .item
+        transition: all .8s ease
+        height: 300px
+        width: 300px
+        text-align: center
+        margin-bottom: 50px
+        background: #fff
+        border-radius: 6px
+        border: 1px solid #d9d9d9
+        color: #000
+        .header
+          font-size: 14px
+          font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
+          color: #000
+          line-height: 40px
+          text-transform: uppercase
+          letter-spacing: .8px
+          border-bottom: 1px solid #d9d9d9
+          background: hsla(0,0%,97%,.5)
+          border-radius: 6px 6px 0 0
 button
   border-radius: 4px !important
   transition: background-color 0.3s
