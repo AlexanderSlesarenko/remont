@@ -377,9 +377,9 @@ input {
     top: 6px; }
   to {
     top: 0; } }
-#telegram_link {
+#telegram_link,
+#vk_link {
   text-decoration: none;
-  background: #2ca5e0;
   position: relative;
   display: inline-block;
   height: 40px;
@@ -392,11 +392,19 @@ input {
   text-align: center;
   font-size: 16px;
   color: #fff; }
-  #telegram_link * {
+  #telegram_link *,
+  #vk_link * {
     vertical-align: middle; }
-  #telegram_link img {
+  #telegram_link img,
+  #vk_link img {
     margin-right: 10px;
     height: 24px;
     width: 24px; }
+
+#telegram_link {
+  background: #2ca5e0; }
+
+#vk_link {
+  background: #5c81b3; }
 
 /*# sourceMappingURL=new_building.css.map */
