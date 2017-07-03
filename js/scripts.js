@@ -36,6 +36,11 @@ function set_scroll_down() {
         scrollTop: $(".block.second").offset().top - 60
     }, 500);
   });
+  $("#nav button").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".block.order").offset().top - 60
+    }, 500);
+  });
 }
 function set_buttons_blur() {
   $("button").click(function(event) {
