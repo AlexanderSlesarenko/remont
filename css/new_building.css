@@ -149,16 +149,24 @@ body {
       line-height: 50px; }
     #first_block .content .moto h1 {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif; }
-    #first_block .content .form {
+  #first_block .form_wrapper {
+    position: absolute;
+    bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    #first_block .form_wrapper .form {
+      display: inline-block;
       background: rgba(255, 255, 255, 0.95);
       padding: 20px;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
       text-align: center;
-      border-radius: 6px;
-      margin-top: 222px; }
-      #first_block .content .form input {
+      border-radius: 6px; }
+      #first_block .form_wrapper .form input {
         margin-right: 20px; }
-      #first_block .content .form button {
+      #first_block .form_wrapper .form button {
         height: 40px;
         font-size: 16px;
         padding-left: 16px;
