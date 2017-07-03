@@ -377,8 +377,8 @@ input {
     top: 6px; }
   to {
     top: 0; } }
-#telegram_link,
-#vk_link {
+#telegram_link_chat,
+#vk_link_chat {
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -392,19 +392,23 @@ input {
   text-align: center;
   font-size: 16px;
   color: #fff; }
-  #telegram_link *,
-  #vk_link * {
+  #telegram_link_chat *,
+  #vk_link_chat * {
     vertical-align: middle; }
-  #telegram_link img,
-  #vk_link img {
+  #telegram_link_chat img,
+  #vk_link_chat img {
     margin-right: 10px;
     height: 24px;
     width: 24px; }
 
-#telegram_link {
+#telegram_link_chat {
   background: #2ca5e0; }
+  #telegram_link_chat:hover {
+    background: #58b8e7; }
 
-#vk_link {
+#vk_link_chat {
   background: #5c81b3; }
+  #vk_link_chat:hover {
+    background: #7f9cc3; }
 
 /*# sourceMappingURL=new_building.css.map */

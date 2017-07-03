@@ -365,8 +365,8 @@ input
     top: 6px
   to
     top: 0
-#telegram_link,
-#vk_link
+#telegram_link_chat,
+#vk_link_chat
   text-decoration: none
   position: relative
   display: inline-block
@@ -387,7 +387,11 @@ input
     height: 24px
     width: 24px
 
-#telegram_link
+#telegram_link_chat
   background: #2ca5e0
-#vk_link
+  &:hover
+    background: #58b8e7
+#vk_link_chat
   background: #5c81b3
+  &:hover
+    background: #7f9cc3
