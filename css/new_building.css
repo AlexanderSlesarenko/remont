@@ -149,7 +149,7 @@ body {
       line-height: 50px; }
     #first_block .content .moto h1 {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif; }
-  #first_block .form_wrapper {
+  #first_block .top_form_wrapper {
     position: absolute;
     bottom: 120px;
     margin-left: auto;
@@ -157,16 +157,16 @@ body {
     left: 0;
     right: 0;
     text-align: center; }
-    #first_block .form_wrapper .form {
+    #first_block .top_form_wrapper .top_form {
       display: inline-block;
       background: rgba(255, 255, 255, 0.95);
       padding: 20px;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
       text-align: center;
       border-radius: 6px; }
-      #first_block .form_wrapper .form input {
+      #first_block .top_form_wrapper .top_form input {
         margin-right: 20px; }
-      #first_block .form_wrapper .form button {
+      #first_block .top_form_wrapper .top_form button {
         height: 40px;
         font-size: 16px;
         padding-left: 16px;
@@ -283,6 +283,7 @@ body {
         background-image: url(../img/worker_3.PNG); }
 
 button {
+  vertical-align: baseline;
   border-radius: 4px !important;
   transition: background-color 0.3s;
   -webkit-transition: background-color 0.3s;
@@ -299,7 +300,6 @@ button {
   font-weight: normal;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
@@ -477,5 +477,16 @@ input {
   top: 9px; }
 #fb_link:hover {
   background: #485eac; }
+
+.bottom_form_wrapper {
+  text-align: center;
+  margin-top: 20px; }
+  .bottom_form_wrapper .bottom_form input {
+    margin-right: 5px; }
+  .bottom_form_wrapper .bottom_form button {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px; }
 
 /*# sourceMappingURL=new_building.css.map */
