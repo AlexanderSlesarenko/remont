@@ -184,6 +184,8 @@ body
 .block
   &.grey
     background-color: #f8f8f8
+  &.dark
+    background-color: #383838
   .wrapper
     max-width: 940px
     margin: 0 auto
@@ -395,3 +397,50 @@ input
   background: #5c81b3
   &:hover
     background: #7f9cc3
+
+#vk_link,
+#instagram_link
+  background: hsla(0,0%,85%,.2)
+  transition: all .3s ease
+  display: inline-block
+  border-radius: 100px
+  position: relative
+  margin-left: 10px
+  height: 40px
+  width: 40px
+  img
+
+    background: 50% 50% no-repeat
+    transition: opacity .3s ease
+    background-size: contain
+    position: absolute
+    opacity: .8
+    content: ""
+#vk_link
+  img
+    left: 8px
+    top: 15px
+    height: 13px
+    width: 23px
+  &:hover
+    background: #5c81b3
+#instagram_link
+  &:after
+    background: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf)
+    transition: all .3s ease
+    border-radius: 100%
+    position: absolute
+    content: ""
+    opacity: 0
+    bottom: 0
+    right: 0
+    left: 0
+    top: 0
+  img
+    z-index: 1
+    left: 8px
+    top: 8px
+    height: 24px
+    width: 24px
+  &:hover:after
+    opacity: 1
