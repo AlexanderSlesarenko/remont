@@ -188,7 +188,6 @@ body {
       position: relative;
       height: 34px;
       width: 34px;
-      color: #000;
       border-radius: 100px;
       border: 1px solid #d9d9d9;
       background: #fff; }
@@ -219,7 +218,6 @@ body {
     line-height: 40px;
     letter-spacing: 0;
     font-size: 40px;
-    color: #222;
     margin: 0; }
   .block .wrapper #faq {
     border-top: 1px solid #d9d9d9;
@@ -230,8 +228,7 @@ body {
     text-align: center;
     font-size: 20px;
     letter-spacing: 0;
-    line-height: 28px;
-    color: #222; }
+    line-height: 28px; }
   .block .wrapper #benefits .item .header {
     max-width: 270px;
     text-align: center;
@@ -239,12 +236,10 @@ body {
     font-size: 28px;
     line-height: 33px;
     font-weight: 700;
-    margin-bottom: 13px;
-    color: #000; }
+    margin-bottom: 13px; }
   .block .wrapper #benefits .item .descr {
     font-size: 18px;
     line-height: 26px;
-    color: #000;
     max-width: 320px;
     margin: 0 auto;
     text-align: center; }
@@ -266,7 +261,6 @@ body {
         text-align: left;
         width: 100%; }
         .block .wrapper #prices .item .content .price {
-          color: #222;
           padding: 0 30px; }
           .block .wrapper #prices .item .content .price .value {
             margin-right: 8px;
@@ -275,7 +269,6 @@ body {
             line-height: 1em;
             font-weight: 900; }
         .block .wrapper #prices .item .content .descr {
-          color: #222;
           font-size: 26px;
           line-height: 1.538em;
           padding: 0 30px;
@@ -302,12 +295,10 @@ body {
       text-align: center;
       background: #fff;
       border-radius: 6px;
-      border: 1px solid #d9d9d9;
-      color: #000; }
+      border: 1px solid #d9d9d9; }
       .block .wrapper #personnel .item .header {
         font-size: 14px;
         font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
-        color: #000;
         line-height: 40px;
         text-transform: uppercase;
         letter-spacing: 0.8px;
@@ -326,8 +317,7 @@ body {
       .block .wrapper #personnel .item .descr {
         display: inline-block;
         margin-top: 16px;
-        font-size: 16px;
-        color: #222; }
+        font-size: 16px; }
       .block .wrapper #personnel .item:first-of-type .image {
         background-image: url(../img/worker_1.PNG); }
       .block .wrapper #personnel .item:nth-of-type(2) .image {
