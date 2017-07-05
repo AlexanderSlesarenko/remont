@@ -268,6 +268,31 @@ body {
       max-width: 320px;
       margin: 0 auto;
       text-align: center; }
+  .block .wrapper #slider_buttons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .block .wrapper #slider_buttons .item {
+      font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+      transition: background 0.3s ease;
+      border: 1px solid #d9d9d9;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 12px 0 11px;
+      background: #fff;
+      margin: 0 0 0 -1px;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      font-size: 14px;
+      color: #222;
+      width: 100%; }
+      .block .wrapper #slider_buttons .item:first-of-type {
+        border-radius: 8px 0 0 8px; }
+      .block .wrapper #slider_buttons .item:last-of-type {
+        border-radius: 0 8px 8px 0; }
+      .block .wrapper #slider_buttons .item:hover {
+        background: #f8f8f8; }
   .block .wrapper #prices {
     margin-top: 60px;
     display: -webkit-flex;
@@ -413,7 +438,7 @@ input {
   cursor: pointer;
   width: 100%;
   text-align: left;
-  transition: 0.4s; }
+  transition: 0.3s; }
   .accordion_header:hover {
     color: #222; }
   .accordion_header:after {
@@ -423,8 +448,8 @@ input {
     float: right;
     width: 31px;
     height: 18px;
-    -webkit-transition: -webkit-transform 0.1s ease-out;
-    transition: transform 0.4s ease-out; }
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; }
   .accordion_header.active:after {
     transform: rotate(180deg); }
   .accordion_header div {
@@ -436,7 +461,7 @@ input {
   background-color: white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out; }
+  transition: max-height 0.3s ease-out; }
   .accordion_content div {
     line-height: 25px;
     font-family: "MuseoSansReqular", Helvetica, Arial, sans-serif;

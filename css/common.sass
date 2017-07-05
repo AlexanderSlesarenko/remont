@@ -258,6 +258,31 @@ body
           max-width: 320px
           margin: 0 auto
           text-align: center
+    #slider_buttons
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      .item
+        font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
+        transition: background .3s ease
+        border: 1px solid #d9d9d9
+        text-transform: uppercase
+        letter-spacing: .8px
+        padding: 12px 0 11px
+        background: #fff
+        margin: 0 0 0 -1px
+        position: relative
+        text-align: center
+        cursor: pointer
+        font-size: 14px
+        color: #222
+        width: 100%
+        &:first-of-type
+          border-radius: 8px 0 0 8px
+        &:last-of-type
+          border-radius: 0 8px 8px 0
+        &:hover
+          background: #f8f8f8
     #prices
       margin-top: 60px
       display: -webkit-flex
@@ -407,7 +432,7 @@ input
   cursor: pointer
   width: 100%
   text-align: left
-  transition: 0.4s
+  transition: 0.3s
   &:hover
     color: #222
   &:after
@@ -417,8 +442,8 @@ input
     float: right
     width: 31px
     height: 18px
-    -webkit-transition: -webkit-transform .1s ease-out
-    transition: transform .4s ease-out
+    -webkit-transition: -webkit-transform .3s ease-out
+    transition: transform .3s ease-out
   &.active
     &:after
       transform: rotate(180deg)
@@ -430,7 +455,7 @@ input
   background-color: white
   max-height: 0
   overflow: hidden
-  transition: max-height 0.4s ease-out
+  transition: max-height 0.3s ease-out
   div
     line-height: 25px
     font-family: "MuseoSansReqular", Helvetica, Arial, sans-serif
