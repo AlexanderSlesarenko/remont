@@ -274,7 +274,7 @@ body {
     display: flex; }
     .block .wrapper #slider_buttons .item {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
       border: 1px solid #d9d9d9;
       text-transform: uppercase;
       letter-spacing: 0.8px;
@@ -293,6 +293,10 @@ body {
         border-radius: 0 8px 8px 0; }
       .block .wrapper #slider_buttons .item:hover {
         background: #f8f8f8; }
+      .block .wrapper #slider_buttons .item.active {
+        border-color: #222 !important;
+        color: #ffffff;
+        background-color: #222222; }
   .block .wrapper #prices {
     margin-top: 60px;
     display: -webkit-flex;

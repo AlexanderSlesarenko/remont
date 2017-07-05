@@ -12,6 +12,7 @@ $(document).ready(function(){
     set_buttons_blur();
     set_scroll_down();
     set_accordion();
+    set_slider_buttons_click_listener();
 });
 
 function set_accordion() {
@@ -29,6 +30,13 @@ function set_accordion() {
         }
       }
     }
+}
+function set_slider_buttons_click_listener() {
+  $("#slider_buttons .item").click(function(event) {
+    if ($(this).hasClass('active')) return;
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  });
 }
 function set_scroll_down() {
   $(".top_pointer_wrapper").click(function() {
