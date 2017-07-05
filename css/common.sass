@@ -287,6 +287,17 @@ body
           border-color: #222!important
           color: #ffffff
           background-color: #222222
+    #slider
+      position: relative
+      height: 500px
+      img
+        opacity: 0
+        position: absolute
+        transition: all .4s ease
+        border-radius: 8px
+        width: 100%
+        &.active
+          opacity: 1
     #prices
       margin-top: 60px
       display: -webkit-flex
