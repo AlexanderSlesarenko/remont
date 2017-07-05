@@ -84,12 +84,12 @@ body {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
 
-#first_block {
+#top_block {
   background: 50% 0 url(../img/1.jpg) no-repeat;
   background-size: cover;
   position: relative;
   height: calc(100vh - 25px); }
-  #first_block .header .logo {
+  #top_block .header .logo {
     display: inline-block;
     height: 40px;
     width: 160px;
@@ -98,58 +98,58 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../img/logo_white.svg); }
-  #first_block .header .menu {
+  #top_block .header .menu {
     margin-right: 20px;
     float: right; }
-    #first_block .header .menu * {
+    #top_block .header .menu * {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
       letter-spacing: 0.8px; }
-    #first_block .header .menu .menu_item {
+    #top_block .header .menu .menu_item {
       display: inline-block;
       line-height: 61px;
       font-size: 14px; }
-      #first_block .header .menu .menu_item.option {
+      #top_block .header .menu .menu_item.option {
         margin-right: 20px; }
-        #first_block .header .menu .menu_item.option.phone * {
+        #top_block .header .menu .menu_item.option.phone * {
           color: #222; }
-        #first_block .header .menu .menu_item.option.phone a {
+        #top_block .header .menu .menu_item.option.phone a {
           text-decoration: none; }
-          #first_block .header .menu .menu_item.option.phone a img {
+          #top_block .header .menu .menu_item.option.phone a img {
             vertical-align: middle; }
-        #first_block .header .menu .menu_item.option.phone img {
+        #top_block .header .menu .menu_item.option.phone img {
           height: 20px;
           width: 20px; }
-        #first_block .header .menu .menu_item.option span {
+        #top_block .header .menu .menu_item.option span {
           cursor: pointer; }
-      #first_block .header .menu .menu_item button {
+      #top_block .header .menu .menu_item button {
         font-size: 14px;
         line-height: 1.8;
         margin-bottom: 1px;
         border-radius: 6px !important;
         padding: 5px 15px; }
-    #first_block .header .menu .menu_item.option:last-of-type {
+    #top_block .header .menu .menu_item.option:last-of-type {
       margin-right: 0; }
-    #first_block .header .menu .menu_item.option * {
+    #top_block .header .menu .menu_item.option * {
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
-    #first_block .header .menu .menu_item.option span {
+    #top_block .header .menu .menu_item.option span {
       color: #ffffff; }
-    #first_block .header .menu .menu_item.option.phone * {
+    #top_block .header .menu .menu_item.option.phone * {
       color: #fae12e; }
-  #first_block .content {
+  #top_block .content {
     position: relative;
     margin: 0 auto;
     max-width: 940px;
     padding-top: 90px;
     padding-bottom: 40px; }
-    #first_block .content .moto * {
+    #top_block .content .moto * {
       color: #fff;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
       display: inline;
       font-size: 40px;
       line-height: 50px; }
-    #first_block .content .moto h1 {
+    #top_block .content .moto h1 {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif; }
-  #first_block .top_form_wrapper {
+  #top_block .top_form_wrapper {
     position: absolute;
     bottom: 120px;
     margin-left: auto;
@@ -157,21 +157,21 @@ body {
     left: 0;
     right: 0;
     text-align: center; }
-    #first_block .top_form_wrapper .top_form {
+    #top_block .top_form_wrapper .top_form {
       display: inline-block;
       background: rgba(255, 255, 255, 0.95);
       padding: 20px;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
       text-align: center;
       border-radius: 6px; }
-      #first_block .top_form_wrapper .top_form input {
+      #top_block .top_form_wrapper .top_form input {
         margin-right: 20px; }
-      #first_block .top_form_wrapper .top_form button {
+      #top_block .top_form_wrapper .top_form button {
         height: 40px;
         font-size: 16px;
         padding-left: 16px;
         padding-right: 16px; }
-  #first_block .top_pointer_wrapper {
+  #top_block .top_pointer_wrapper {
     margin-left: -100px;
     position: absolute;
     bottom: -55px;
@@ -180,7 +180,7 @@ body {
     z-index: 1;
     left: 50%;
     cursor: pointer; }
-    #first_block .top_pointer_wrapper .top_pointer {
+    #top_block .top_pointer_wrapper .top_pointer {
       display: block;
       -webkit-animation: _1SPxwonwfe0SdBCvZcLsRX 1s infinite;
       animation: _1SPxwonwfe0SdBCvZcLsRX 1s infinite;
@@ -192,7 +192,7 @@ body {
       border-radius: 100px;
       border: 1px solid #d9d9d9;
       background: #fff; }
-      #first_block .top_pointer_wrapper .top_pointer:before {
+      #top_block .top_pointer_wrapper .top_pointer:before {
         content: "";
         position: absolute;
         width: 10px;
