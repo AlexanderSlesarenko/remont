@@ -229,20 +229,39 @@ body {
     font-size: 20px;
     letter-spacing: 0;
     line-height: 28px; }
-  .block .wrapper #benefits .item .header {
-    max-width: 270px;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 28px;
-    line-height: 33px;
-    font-weight: 700;
-    margin-bottom: 13px; }
-  .block .wrapper #benefits .item .descr {
-    font-size: 18px;
-    line-height: 26px;
-    max-width: 320px;
-    margin: 0 auto;
-    text-align: center; }
+  .block .wrapper #benefits .top,
+  .block .wrapper #benefits .bottom {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .block .wrapper #benefits .bottom .item:first-of-type {
+    margin-left: 150px; }
+  .block .wrapper #benefits .bottom .item:last-of-type {
+    margin-right: 150px; }
+  .block .wrapper #benefits .item {
+    height: 320px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #d9d9d9;
+    border-top: none; }
+    .block .wrapper #benefits .item .header {
+      max-width: 270px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 28px;
+      line-height: 33px;
+      font-weight: 700;
+      margin-bottom: 13px; }
+    .block .wrapper #benefits .item .descr {
+      font-size: 18px;
+      line-height: 26px;
+      max-width: 320px;
+      margin: 0 auto;
+      text-align: center; }
   .block .wrapper #prices {
     margin-top: 60px;
     display: -webkit-flex;

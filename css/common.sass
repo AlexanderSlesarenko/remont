@@ -216,7 +216,27 @@ body
       letter-spacing: 0
       line-height: 28px
     #benefits
+      .top,
+      .bottom
+        display: -webkit-flex
+        display: -ms-flexbox
+        display: flex
+        -webkit-justify-content: space-between
+        -ms-flex-pack: justify
+        justify-content: space-between
+      .bottom
+        .item
+          &:first-of-type
+            margin-left: 150px
+          &:last-of-type
+            margin-right: 150px
       .item
+        height: 320px
+        width: 300px
+        display: inline-block
+        vertical-align: top
+        border: 1px solid #d9d9d9
+        border-top: none
         .header
           max-width: 270px
           text-align: center
