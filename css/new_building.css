@@ -244,22 +244,29 @@ body {
       width: 300px;
       padding: 30px 0;
       border: 1px solid #d9d9d9;
-      border-radius: 6px; }
+      border-radius: 6px;
+      background: rgba(247, 247, 247, 0.5); }
       .block .wrapper #prices .item .content {
         text-align: left;
         width: 100%; }
         .block .wrapper #prices .item .content .price {
           color: #222;
-          font-size: 40px;
-          line-height: 1em;
-          font-weight: 900;
           padding: 0 30px; }
+          .block .wrapper #prices .item .content .price .value {
+            margin-right: 8px;
+            margin-left: 8px;
+            font-size: 40px;
+            line-height: 1em;
+            font-weight: 900; }
         .block .wrapper #prices .item .content .descr {
           color: #222;
           font-size: 26px;
           line-height: 1.538em;
-          margin-bottom: 34px;
-          padding: 0 30px; }
+          padding: 0 30px;
+          margin-top: 10px; }
+        .block .wrapper #prices .item .content .details {
+          padding: 0 30px;
+          margin: 15px 0; }
         .block .wrapper #prices .item .content button {
           width: 240px;
           font-size: 16px;
