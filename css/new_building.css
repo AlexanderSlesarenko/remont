@@ -224,7 +224,7 @@ body {
   .block .wrapper #faq {
     border-top: 1px solid #d9d9d9;
     margin-top: 40px; }
-  .block .wrapper .sub_header {
+  .block .wrapper > .sub_header {
     margin-top: 22px;
     padding: 0 80px;
     text-align: center;
