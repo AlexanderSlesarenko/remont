@@ -17,10 +17,10 @@ $(document).ready(function(){
 });
 function personnel_transform() {
     var checkpoint_achieved;
-    var checkpoint = $(".personnel .header").offset().top - $(".personnel .header").height() - 160;
+    var checkpoint = $("#personnel").offset().top;
     $(window).scroll(function (e) {
         if (checkpoint_achieved) return;
-        if ($(window).scrollTop() >= checkpoint) {
+        if ($(window).scrollTop() + $(window).height() >= checkpoint + 75) {
             checkpoint_achieved = true;
             $("#personnel .item:first-of-type, #personnel .item:last-of-type").addClass('active');
         }
