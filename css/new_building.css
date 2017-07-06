@@ -229,6 +229,8 @@ body {
     font-size: 20px;
     letter-spacing: 0;
     line-height: 28px; }
+    .block .wrapper > .sub_header.unlimited {
+      padding: 0; }
   .block .wrapper #benefits .top,
   .block .wrapper #benefits .bottom {
     display: -webkit-flex;
@@ -271,7 +273,9 @@ body {
   .block .wrapper #slider_buttons {
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 25px; }
     .block .wrapper #slider_buttons .item {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
       transition: background-color 0.3s ease, border-color 0.3s ease;
