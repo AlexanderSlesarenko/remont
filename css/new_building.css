@@ -211,7 +211,8 @@ body {
 .block .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 100px 0; }
+  padding-top: 80px;
+  padding-bottom: 65px; }
   .block .wrapper > .header {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     text-align: center;
@@ -393,6 +394,15 @@ body {
         background-image: url(../img/worker_2.PNG); }
       .block .wrapper #personnel .item:last-of-type .image {
         background-image: url(../img/worker_3.PNG); }
+      .block .wrapper #personnel .item:first-of-type, .block .wrapper #personnel .item:last-of-type {
+        transition: all 0.8s ease;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        background: #f6f6f6; }
+        .block .wrapper #personnel .item:first-of-type.active, .block .wrapper #personnel .item:last-of-type.active {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          background: #fff; }
 
 button {
   vertical-align: baseline;

@@ -197,7 +197,8 @@ body
   .wrapper
     max-width: 940px
     margin: 0 auto
-    padding: 100px 0
+    padding-top: 80px
+    padding-bottom: 65px
     & > .header
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
       text-align: center
@@ -386,6 +387,16 @@ body
         &:last-of-type
           .image
             background-image: url(../img/worker_3.PNG)
+        &:first-of-type,
+        &:last-of-type
+          transition: all .8s ease
+          -webkit-transform: scale(.7)
+          transform: scale(.7)
+          background: #f6f6f6
+          &.active
+            -webkit-transform: scale(1)
+            transform: scale(1)
+            background: #fff
 button
   vertical-align: baseline
   border-radius: 4px !important

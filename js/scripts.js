@@ -13,8 +13,19 @@ $(document).ready(function(){
     set_scroll_down();
     set_accordion();
     set_slider_buttons_click_listener();
+    personnel_transform();
 });
-
+function personnel_transform() {
+    var checkpoint_achieved;
+    var checkpoint = $(".personnel .header").offset().top - $(".personnel .header").height() - 160;
+    $(window).scroll(function (e) {
+        if (checkpoint_achieved) return;
+        if ($(window).scrollTop() >= checkpoint) {
+            checkpoint_achieved = true;
+            $("#personnel .item:first-of-type, #personnel .item:last-of-type").addClass('active');
+        }
+    })
+}
 function set_accordion() {
     var acc = document.getElementsByClassName("accordion_header");
     var i;
