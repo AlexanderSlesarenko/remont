@@ -71,7 +71,7 @@ function set_buttons_blur() {
 }
 function set_toastr_options() {
     toastr.options = {
-        "positionClass": "toast-top-center",
+        "positionClass": "toast-top-center"
     }
 }
 function set_phone_mask() {
@@ -99,13 +99,12 @@ function set_form_submit_listener() {
 			{
 				name : name,
 				phone : phone
-			}, function(){
-                $(that).find('input[name="name"]').val('');
-                $(that).find('input[name="phone"]').val('');
-                $(that).find('button[type="submit"]').prop('disabled', false);
-				toastr.success('Заявка успешно отправлена.');
-			}
+			}, function(){}
 		);
+        $(that).find('input[name="name"]').val('');
+        $(that).find('input[name="phone"]').val('');
+        $(that).find('button[type="submit"]').prop('disabled', false);
+        toastr.success('Заявка успешно отправлена.');
 		return false;
 	});
 }

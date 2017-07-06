@@ -470,6 +470,9 @@ input {
       .block.footer .wrapper .info .right {
         display: inline-block; }
 
+.toast {
+  opacity: 1 !important; }
+
 #faq {
   border-top: 1px solid #d9d9d9;
   margin-top: 40px; }
