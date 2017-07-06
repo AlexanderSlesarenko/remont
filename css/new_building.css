@@ -220,9 +220,6 @@ body {
     letter-spacing: 0;
     font-size: 40px;
     margin: 0; }
-  .block .wrapper #faq {
-    border-top: 1px solid #d9d9d9;
-    margin-top: 40px; }
   .block .wrapper > .sub_header {
     margin-top: 22px;
     padding: 0 80px;
@@ -232,180 +229,6 @@ body {
     line-height: 28px; }
     .block .wrapper > .sub_header.unlimited {
       padding: 0; }
-  .block .wrapper #benefits .top,
-  .block .wrapper #benefits .bottom {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .block .wrapper #benefits .bottom {
-    margin-top: 20px; }
-    .block .wrapper #benefits .bottom .item:first-of-type {
-      margin-left: 160px; }
-    .block .wrapper #benefits .bottom .item:last-of-type {
-      margin-right: 160px; }
-  .block .wrapper #benefits .item {
-    height: 280px;
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    background: #fff;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 6px; }
-    .block .wrapper #benefits .item .image_wrapper {
-      margin-top: 16px;
-      text-align: center; }
-    .block .wrapper #benefits .item .header {
-      font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
-      max-width: 270px;
-      text-align: center;
-      margin: 0 auto;
-      font-size: 26px;
-      line-height: 33px;
-      margin-bottom: 10px;
-      margin-top: 10px; }
-    .block .wrapper #benefits .item .descr {
-      padding: 0 10px;
-      font-size: 17px;
-      line-height: 26px;
-      max-width: 320px;
-      margin: 0 auto;
-      text-align: center; }
-  .block .wrapper #slider_buttons {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 25px; }
-    .block .wrapper #slider_buttons .item {
-      font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
-      border: 1px solid #d9d9d9;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      padding: 12px 0 11px;
-      background: #fff;
-      margin: 0 0 0 -1px;
-      position: relative;
-      text-align: center;
-      cursor: pointer;
-      font-size: 14px;
-      color: #222;
-      width: 100%; }
-      .block .wrapper #slider_buttons .item:first-of-type {
-        border-radius: 8px 0 0 8px; }
-      .block .wrapper #slider_buttons .item:last-of-type {
-        border-radius: 0 8px 8px 0; }
-      .block .wrapper #slider_buttons .item:hover {
-        background: #f8f8f8; }
-      .block .wrapper #slider_buttons .item.active {
-        border-color: #222 !important;
-        color: #ffffff;
-        background-color: #222222; }
-  .block .wrapper #slider {
-    position: relative;
-    height: 500px; }
-    .block .wrapper #slider img {
-      opacity: 0;
-      position: absolute;
-      transition: all 0.3s ease;
-      border-radius: 8px;
-      width: 100%; }
-      .block .wrapper #slider img.active {
-        opacity: 1; }
-  .block .wrapper #prices {
-    margin-top: 60px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .block .wrapper #prices .item {
-      width: 300px;
-      padding: 30px 0;
-      border: 1px solid #d9d9d9;
-      border-radius: 6px;
-      background: rgba(247, 247, 247, 0.5); }
-      .block .wrapper #prices .item .content {
-        text-align: left;
-        width: 100%; }
-        .block .wrapper #prices .item .content .price {
-          padding: 0 30px; }
-          .block .wrapper #prices .item .content .price .value {
-            margin-right: 8px;
-            margin-left: 8px;
-            font-size: 40px;
-            line-height: 1em;
-            font-weight: 900; }
-        .block .wrapper #prices .item .content .descr {
-          font-size: 26px;
-          line-height: 1.538em;
-          padding: 0 30px;
-          margin-top: 10px; }
-        .block .wrapper #prices .item .content .details {
-          padding: 0 30px;
-          margin: 15px 0; }
-        .block .wrapper #prices .item .content button {
-          width: 240px;
-          font-size: 16px;
-          height: 40px;
-          margin: 0 30px; }
-  .block .wrapper #personnel {
-    margin-top: 70px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .block .wrapper #personnel .item {
-      height: 300px;
-      width: 300px;
-      text-align: center;
-      background: #fff;
-      border-radius: 6px;
-      border: 1px solid #d9d9d9; }
-      .block .wrapper #personnel .item .header {
-        font-size: 14px;
-        font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
-        line-height: 40px;
-        text-transform: uppercase;
-        letter-spacing: 0.8px;
-        border-bottom: 1px solid #d9d9d9;
-        background: rgba(247, 247, 247, 0.5);
-        border-radius: 6px 6px 0 0; }
-      .block .wrapper #personnel .item .image {
-        background: 70% 0 no-repeat;
-        background-size: 190px;
-        border-radius: 100px;
-        margin: 0 auto;
-        opacity: 1;
-        height: 160px;
-        width: 160px;
-        margin-top: 30px; }
-      .block .wrapper #personnel .item .descr {
-        display: inline-block;
-        margin-top: 16px;
-        font-size: 16px; }
-      .block .wrapper #personnel .item:first-of-type .image {
-        background-image: url(../img/worker_1.PNG); }
-      .block .wrapper #personnel .item:nth-of-type(2) .image {
-        background-image: url(../img/worker_2.PNG); }
-      .block .wrapper #personnel .item:last-of-type .image {
-        background-image: url(../img/worker_3.PNG); }
-      .block .wrapper #personnel .item:first-of-type, .block .wrapper #personnel .item:last-of-type {
-        transition: all 0.8s ease;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-        background: #f6f6f6; }
-        .block .wrapper #personnel .item:first-of-type.active, .block .wrapper #personnel .item:last-of-type.active {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-          background: #fff; }
 
 button {
   vertical-align: baseline;
@@ -645,5 +468,188 @@ input {
           text-decoration: none; }
       .block.footer .wrapper .info .right {
         display: inline-block; }
+
+#faq {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 40px; }
+
+#benefits .top,
+#benefits .bottom {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+#benefits .bottom {
+  margin-top: 20px; }
+  #benefits .bottom .item:first-of-type {
+    margin-left: 160px; }
+  #benefits .bottom .item:last-of-type {
+    margin-right: 160px; }
+#benefits .item {
+  height: 280px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px; }
+  #benefits .item .image_wrapper {
+    margin-top: 16px;
+    text-align: center; }
+  #benefits .item .header {
+    font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+    max-width: 270px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  #benefits .item .descr {
+    padding: 0 10px;
+    font-size: 17px;
+    line-height: 26px;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center; }
+
+#slider_buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 25px; }
+  #slider_buttons .item {
+    font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #d9d9d9;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 12px 0 11px;
+    background: #fff;
+    margin: 0 0 0 -1px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #222;
+    width: 100%; }
+    #slider_buttons .item:first-of-type {
+      border-radius: 8px 0 0 8px; }
+    #slider_buttons .item:last-of-type {
+      border-radius: 0 8px 8px 0; }
+    #slider_buttons .item:hover {
+      background: #f8f8f8; }
+    #slider_buttons .item.active {
+      border-color: #222 !important;
+      color: #ffffff;
+      background-color: #222222; }
+
+#slider {
+  position: relative;
+  height: 500px; }
+  #slider img {
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 100%; }
+    #slider img.active {
+      opacity: 1; }
+
+#prices {
+  margin-top: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  #prices .item {
+    width: 300px;
+    padding: 30px 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    background: rgba(247, 247, 247, 0.5); }
+    #prices .item .content {
+      text-align: left;
+      width: 100%; }
+      #prices .item .content .price {
+        padding: 0 30px; }
+        #prices .item .content .price .value {
+          margin-right: 8px;
+          margin-left: 8px;
+          font-size: 40px;
+          line-height: 1em;
+          font-weight: 900; }
+      #prices .item .content .descr {
+        font-size: 26px;
+        line-height: 1.538em;
+        padding: 0 30px;
+        margin-top: 10px; }
+      #prices .item .content .details {
+        padding: 0 30px;
+        margin: 15px 0; }
+      #prices .item .content button {
+        width: 240px;
+        font-size: 16px;
+        height: 40px;
+        margin: 0 30px; }
+
+#personnel {
+  margin-top: 70px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  #personnel .item {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9; }
+    #personnel .item .header {
+      font-size: 14px;
+      font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+      line-height: 40px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #d9d9d9;
+      background: rgba(247, 247, 247, 0.5);
+      border-radius: 6px 6px 0 0; }
+    #personnel .item .image {
+      background: 70% 0 no-repeat;
+      background-size: 190px;
+      border-radius: 100px;
+      margin: 0 auto;
+      opacity: 1;
+      height: 160px;
+      width: 160px;
+      margin-top: 30px; }
+    #personnel .item .descr {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 16px; }
+    #personnel .item:first-of-type .image {
+      background-image: url(../img/worker_1.PNG); }
+    #personnel .item:nth-of-type(2) .image {
+      background-image: url(../img/worker_2.PNG); }
+    #personnel .item:last-of-type .image {
+      background-image: url(../img/worker_3.PNG); }
+    #personnel .item:first-of-type, #personnel .item:last-of-type {
+      transition: all 0.8s ease;
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+      background: #f6f6f6; }
+      #personnel .item:first-of-type.active, #personnel .item:last-of-type.active {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        background: #fff; }
 
 /*# sourceMappingURL=new_building.css.map */
