@@ -498,6 +498,9 @@ input {
     margin-left: 160px; }
   #benefits .bottom .item:last-of-type {
     margin-right: 160px; }
+    @media (max-width: 953px) {
+      #benefits .bottom .item:last-of-type {
+        margin-bottom: 0; } }
 #benefits .item {
   height: 280px;
   width: 300px;
@@ -509,7 +512,7 @@ input {
   border-radius: 6px; }
   @media (max-width: 953px) {
     #benefits .item {
-      height: initial;
+      height: 190px;
       width: 500px;
       display: block;
       margin-left: auto !important;
@@ -520,7 +523,12 @@ input {
     text-align: center; }
     @media (max-width: 953px) {
       #benefits .item .image_wrapper {
-        display: inline-block; } }
+        margin-top: 0;
+        display: inline-block;
+        float: left;
+        line-height: 190px; }
+        #benefits .item .image_wrapper img {
+          vertical-align: middle; } }
   @media (max-width: 953px) {
     #benefits .item .content {
       display: inline-block; } }

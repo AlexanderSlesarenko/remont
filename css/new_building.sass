@@ -23,6 +23,8 @@
         margin-left: 160px
       &:last-of-type
         margin-right: 160px
+        @media (max-width: 953px)
+          margin-bottom: 0
   .item
     height: 280px
     width: 300px
@@ -33,7 +35,7 @@
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.2)
     border-radius: 6px
     @media (max-width: 953px)
-      height: initial
+      height: 190px
       width: 500px
       display: block
       margin-left: auto!important
@@ -43,7 +45,12 @@
       margin-top: 16px
       text-align: center
       @media (max-width: 953px)
+        margin-top: 0
         display: inline-block
+        float: left
+        line-height: 190px
+        img
+          vertical-align: middle
     .content
       @media (max-width: 953px)
         display: inline-block
