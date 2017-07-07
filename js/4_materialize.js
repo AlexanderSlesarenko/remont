@@ -244,7 +244,10 @@ if ($) {
       var defaults = {
         menuWidth: 300,
         edge: 'left',
-        closeOnClick: false
+        closeOnClick: false,
+        draggable: true,
+        onOpen: null,
+        onClose: null
       };
       options = $.extend(defaults, options);
 
@@ -361,6 +364,11 @@ if ($) {
                 }
               });
           }
+
+          // Callback
+          if (typeof(options.onClose) === 'function') {
+            options.onClose.call(this);
+          }
         }
 
 
@@ -398,6 +406,9 @@ if ($) {
               overlay.css('opacity', 0).click( function(){
                 removeMenu();
               });
+              if (typeof(options.onOpen) === 'function') {
+                  options.onOpen.call(this);
+              }
               $('body').append(overlay);
             }
 
@@ -481,6 +492,9 @@ if ($) {
                 menu_id.velocity({'translateX': [-1 * options.menuWidth - 10, leftPos]}, {duration: 200, queue: false, easing: 'easeOutQuad'});
                 $('#sidenav-overlay').velocity({opacity: 0 }, {duration: 200, queue: false, easing: 'easeOutQuad',
                   complete: function () {
+                      if (typeof(options.onClose) === 'function') {
+                        options.onClose.call(this);
+                      }
                     $(this).remove();
                   }});
                 dragTarget.css({width: '10px', right: '', left: 0});
@@ -562,7 +576,12 @@ if ($) {
                   panning = false;
                 }
               });
+
+            // Callback
+            if (typeof(options.onOpen) === 'function') {
+              options.onOpen.call(this);
             }
+          }
 
             return false;
           });

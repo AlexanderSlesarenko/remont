@@ -4,13 +4,6 @@ window.onbeforeunload = function () {
 var nav_visible;
 var nav = $('#nav');
 
-function temp() {
-    $(".menu_mobile_icon").addClass('active');
-}
-function untemp() {
-    $(".menu_mobile_icon").removeClass('active');
-}
-
 $(document).ready(function(){
     set_float_nav();
     set_form_submit_listener();
@@ -24,7 +17,15 @@ $(document).ready(function(){
     set_mobile_menu();
 });
 function set_mobile_menu() {
-    $(".menu_mobile_icon").sideNav();
+    $(".menu_mobile_icon").sideNav({
+      menuWidth: 300,
+      onOpen: function(el) {
+          $(".menu_mobile_icon").addClass('active');
+      },
+      onClose: function(el) {
+          $(".menu_mobile_icon").removeClass('active');
+      }
+    });
 }
 function personnel_transform() {
     var checkpoint_achieved;
