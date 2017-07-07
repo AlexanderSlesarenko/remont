@@ -485,8 +485,15 @@ input {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 953px) {
+    #benefits .top,
+    #benefits .bottom {
+      display: block; } }
 #benefits .bottom {
   margin-top: 20px; }
+  @media (max-width: 953px) {
+    #benefits .bottom {
+      margin-top: 0; } }
   #benefits .bottom .item:first-of-type {
     margin-left: 160px; }
   #benefits .bottom .item:last-of-type {
@@ -500,10 +507,24 @@ input {
   background: #fff;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 6px; }
+  @media (max-width: 953px) {
+    #benefits .item {
+      height: initial;
+      width: 500px;
+      display: block;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 10px; } }
   #benefits .item .image_wrapper {
     margin-top: 16px;
     text-align: center; }
-  #benefits .item .header {
+    @media (max-width: 953px) {
+      #benefits .item .image_wrapper {
+        display: inline-block; } }
+  @media (max-width: 953px) {
+    #benefits .item .content {
+      display: inline-block; } }
+  #benefits .item .content .header {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     max-width: 270px;
     text-align: center;
@@ -512,7 +533,7 @@ input {
     line-height: 33px;
     margin-bottom: 10px;
     margin-top: 10px; }
-  #benefits .item .descr {
+  #benefits .item .content .descr {
     padding: 0 10px;
     font-size: 17px;
     line-height: 26px;
@@ -572,7 +593,7 @@ input {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media (max-width: 991px) {
+  @media (max-width: 953px) {
     #prices {
       text-align: center;
       display: block; } }
@@ -582,7 +603,7 @@ input {
     border: 1px solid #d9d9d9;
     border-radius: 6px;
     background: rgba(247, 247, 247, 0.5); }
-    @media (max-width: 991px) {
+    @media (max-width: 953px) {
       #prices .item:last-of-type {
         margin-top: 13px;
         display: block;
@@ -627,7 +648,7 @@ input {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media (max-width: 991px) {
+  @media (max-width: 953px) {
     #personnel {
       text-align: center;
       display: block; } }
@@ -673,7 +694,7 @@ input {
       -webkit-transform: scale(1);
       transform: scale(1);
       background: #fff; }
-    @media (max-width: 991px) {
+    @media (max-width: 953px) {
       #personnel .item:last-of-type {
         margin-top: 13px;
         display: block;
