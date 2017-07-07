@@ -14,7 +14,11 @@ $(document).ready(function(){
     set_accordion();
     set_slider_buttons_click_listener();
     personnel_transform();
+    set_mobile_menu();
 });
+function set_mobile_menu() {
+    $(".button-collapse").sideNav();
+}
 function personnel_transform() {
     var checkpoint_achieved;
     var checkpoint = $("#personnel").offset().top;
