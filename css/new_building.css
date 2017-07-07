@@ -49,6 +49,9 @@ body {
   #nav .menu {
     margin-right: 20px;
     float: right; }
+    @media (max-width: 920px) {
+      #nav .menu {
+        display: none; } }
     #nav .menu .menu_item {
       display: inline-block;
       line-height: 61px;
@@ -80,6 +83,49 @@ body {
       -o-transition: color 0.3s; }
       #nav .menu .menu_item.option span:hover {
         color: #222; }
+  #nav .menu_mobile_icon {
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    display: none;
+    float: right; }
+    #nav .menu_mobile_icon.active:before {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      margin-top: -2px; }
+    #nav .menu_mobile_icon.active:after {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -2px; }
+    #nav .menu_mobile_icon:before {
+      background: #222;
+      margin-top: -7px;
+      transition: all 0.2s ease;
+      position: absolute;
+      margin-left: -13px;
+      content: "";
+      width: 26px;
+      height: 4px;
+      left: 50%;
+      top: 50%; }
+    #nav .menu_mobile_icon:after {
+      background: #222;
+      margin-top: 3px;
+      transition: all 0.2s ease;
+      position: absolute;
+      margin-left: -13px;
+      content: "";
+      width: 26px;
+      height: 4px;
+      left: 50%;
+      top: 50%; }
+    @media (max-width: 920px) {
+      #nav .menu_mobile_icon {
+        display: inline-block; } }
   #nav * {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }

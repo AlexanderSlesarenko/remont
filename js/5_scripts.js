@@ -4,6 +4,13 @@ window.onbeforeunload = function () {
 var nav_visible;
 var nav = $('#nav');
 
+function temp() {
+    $(".menu_mobile_icon").addClass('active');
+}
+function untemp() {
+    $(".menu_mobile_icon").removeClass('active');
+}
+
 $(document).ready(function(){
     set_float_nav();
     set_form_submit_listener();
