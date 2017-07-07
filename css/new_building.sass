@@ -150,11 +150,13 @@
   -webkit-justify-content: space-between
   -ms-flex-pack: justify
   justify-content: space-between
+  @media (max-width: 991px)
+    text-align: center
+    display: block
   .item
     height: 300px
     width: 300px
     text-align: center
-    background: #fff
     border-radius: 6px
     border: 1px solid #d9d9d9
     .header
@@ -188,15 +190,25 @@
     &:last-of-type
       .image
         background-image: url(../img/worker_3.PNG)
-    &:first-of-type,
-    &:last-of-type
-      transition: all .8s ease
-      -webkit-transform: scale(.7)
-      transform: scale(.7)
-      background: #f6f6f6
-      &.active
-        -webkit-transform: scale(1)
-        transform: scale(1)
-        background: #fff
+    transition: all .8s ease
+    -webkit-transform: scale(.7)
+    transform: scale(.7)
+    background: #f6f6f6
+    &.active
+      -webkit-transform: scale(1)
+      transform: scale(1)
+      background: #fff
+    @media (max-width: 991px)
+      &:last-of-type
+        margin-top: 13px
+        display: block
+        margin-left: auto
+        margin-right: auto
+      &:first-of-type
+        margin-right: 5px
+        display: inline-block
+      &:nth-of-type(2)
+        margin-left: 5px
+        display: inline-block
 .block.faq > .wrapper
   padding-top: 30px

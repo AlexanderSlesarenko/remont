@@ -22,7 +22,7 @@ function personnel_transform() {
         if (checkpoint_achieved) return;
         if ($(window).scrollTop() + $(window).height() >= checkpoint + 75) {
             checkpoint_achieved = true;
-            $("#personnel .item:first-of-type, #personnel .item:last-of-type").addClass('active');
+            $("#personnel .item").addClass('active');
         }
     })
 }
