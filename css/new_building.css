@@ -572,12 +572,28 @@ input {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 991px) {
+    #prices {
+      text-align: center;
+      display: block; } }
   #prices .item {
     width: 300px;
     padding: 30px 0;
     border: 1px solid #d9d9d9;
     border-radius: 6px;
     background: rgba(247, 247, 247, 0.5); }
+    @media (max-width: 991px) {
+      #prices .item:last-of-type {
+        margin-top: 13px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      #prices .item:first-of-type {
+        margin-right: 5px;
+        display: inline-block; }
+      #prices .item:nth-of-type(2) {
+        margin-left: 5px;
+        display: inline-block; } }
     #prices .item .content {
       text-align: left;
       width: 100%; }
