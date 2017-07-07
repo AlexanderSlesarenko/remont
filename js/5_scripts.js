@@ -24,7 +24,7 @@ $(document).ready(function(){
     set_mobile_menu();
 });
 function set_mobile_menu() {
-    $(".button-collapse").sideNav();
+    $(".menu_mobile_icon").sideNav();
 }
 function personnel_transform() {
     var checkpoint_achieved;
