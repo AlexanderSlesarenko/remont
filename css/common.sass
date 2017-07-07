@@ -1,3 +1,45 @@
+=menu_mobile_icon()
+  margin-top: 6px
+  margin-right: 6px
+  transition: all .2s ease
+  border-radius: 6px
+  position: relative
+  cursor: pointer
+  height: 50px
+  width: 50px
+  z-index: 1
+  display: none
+  float: right
+  &.active
+    &:before
+      transform: rotate(45deg)
+      -webkit-transform: rotate(45deg)
+      margin-top: -2px
+    &:after
+      transform: rotate(-45deg)
+      -webkit-transform: rotate(-45deg)
+      margin-top: -2px
+  &:before
+    margin-top: -7px
+    transition: all .2s ease
+    position: absolute
+    margin-left: -13px
+    content: ""
+    width: 26px
+    height: 4px
+    left: 50%
+    top: 50%
+  &:after
+    margin-top: 3px
+    transition: all .2s ease
+    position: absolute
+    margin-left: -13px
+    content: ""
+    width: 26px
+    height: 4px
+    left: 50%
+    top: 50%
+
 =logo()
   display: inline-block
   height: 40px
@@ -95,50 +137,12 @@ body
           &:hover
             color: #222
   .menu_mobile_icon
-    margin-top: 6px
-    margin-right: 6px
-    transition: all .2s ease
-    border-radius: 6px
-    position: relative
-    cursor: pointer
-    height: 50px
-    width: 50px
-    z-index: 1
-    display: none
-    float: right
-    &.active
-      &:before
-        transform: rotate(45deg)
-        -webkit-transform: rotate(45deg)
-        margin-top: -2px
-      &:after
-        transform: rotate(-45deg)
-        -webkit-transform: rotate(-45deg)
-        margin-top: -2px
-    &:before
-      background: #222
-      margin-top: -7px
-      transition: all .2s ease
-      position: absolute
-      margin-left: -13px
-      content: ""
-      width: 26px
-      height: 4px
-      left: 50%
-      top: 50%
-    &:after
-      background: #222
-      margin-top: 3px
-      transition: all .2s ease
-      position: absolute
-      margin-left: -13px
-      content: ""
-      width: 26px
-      height: 4px
-      left: 50%
-      top: 50%
+    +menu_mobile_icon()
     @media (max-width: 920px)
       display: inline-block
+    &:before,
+    &:after
+      background-color: #222
   *
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
     letter-spacing: .8px
@@ -153,6 +157,8 @@ body
       +logo()
       background-image: url(../img/logo_white.svg)
     .menu
+      @media (max-width: 735px)
+        display: none
       *
         font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
         letter-spacing: .8px
@@ -168,6 +174,13 @@ body
           &.phone
             *
               color: #fae12e
+    .menu_mobile_icon
+      +menu_mobile_icon()
+      @media (max-width: 735px)
+        display: inline-block
+      &:before,
+      &:after
+        background-color: #fff
   .content
     position: relative
     margin: 0 auto

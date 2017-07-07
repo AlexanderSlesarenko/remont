@@ -106,7 +106,6 @@ body {
       -webkit-transform: rotate(-45deg);
       margin-top: -2px; }
     #nav .menu_mobile_icon:before {
-      background: #222;
       margin-top: -7px;
       transition: all 0.2s ease;
       position: absolute;
@@ -117,7 +116,6 @@ body {
       left: 50%;
       top: 50%; }
     #nav .menu_mobile_icon:after {
-      background: #222;
       margin-top: 3px;
       transition: all 0.2s ease;
       position: absolute;
@@ -130,6 +128,8 @@ body {
     @media (max-width: 920px) {
       #nav .menu_mobile_icon {
         display: inline-block; } }
+    #nav .menu_mobile_icon:before, #nav .menu_mobile_icon:after {
+      background-color: #222; }
   #nav * {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.8px; }
@@ -152,6 +152,9 @@ body {
   #top_block .header .menu {
     margin-right: 20px;
     float: right; }
+    @media (max-width: 735px) {
+      #top_block .header .menu {
+        display: none; } }
     #top_block .header .menu * {
       font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
       letter-spacing: 0.8px; }
@@ -186,6 +189,51 @@ body {
       color: #ffffff; }
     #top_block .header .menu .menu_item.option.phone * {
       color: #fae12e; }
+  #top_block .header .menu_mobile_icon {
+    margin-top: 6px;
+    margin-right: 6px;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    display: none;
+    float: right; }
+    #top_block .header .menu_mobile_icon.active:before {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      margin-top: -2px; }
+    #top_block .header .menu_mobile_icon.active:after {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top: -2px; }
+    #top_block .header .menu_mobile_icon:before {
+      margin-top: -7px;
+      transition: all 0.2s ease;
+      position: absolute;
+      margin-left: -13px;
+      content: "";
+      width: 26px;
+      height: 4px;
+      left: 50%;
+      top: 50%; }
+    #top_block .header .menu_mobile_icon:after {
+      margin-top: 3px;
+      transition: all 0.2s ease;
+      position: absolute;
+      margin-left: -13px;
+      content: "";
+      width: 26px;
+      height: 4px;
+      left: 50%;
+      top: 50%; }
+    @media (max-width: 735px) {
+      #top_block .header .menu_mobile_icon {
+        display: inline-block; } }
+    #top_block .header .menu_mobile_icon:before, #top_block .header .menu_mobile_icon:after {
+      background-color: #fff; }
   #top_block .content {
     position: relative;
     margin: 0 auto;
