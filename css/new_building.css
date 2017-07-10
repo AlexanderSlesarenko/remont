@@ -586,7 +586,6 @@ input {
   backface-visibility: hidden;
   overflow-y: auto;
   will-change: transform;
-  backface-visibility: hidden;
   transform: translateX(-105%); }
   .side-nav .logo_wrapper .logo {
     display: inline-block;

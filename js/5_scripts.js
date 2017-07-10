@@ -75,6 +75,12 @@ function set_scroll_down() {
         scrollTop: $(".block.order").offset().top - 60
     }, 500);
   });
+  $("#slide-out button").click(function() {
+    $(".menu_mobile_icon").sideNav('hide');
+    $('html, body').animate({
+        scrollTop: $(".block.order").offset().top - 60
+    }, 500);
+  });
 }
 function set_buttons_blur() {
   $("button").click(function(event) {
