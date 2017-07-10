@@ -534,9 +534,25 @@ input
   will-change: transform
   backface-visibility: hidden
   transform: translateX(-105%)
-  .logo
-    +logo()
-    background-image: url(../img/logo.svg)
+  .logo_wrapper
+    .logo
+      +logo()
+      background-image: url(../img/logo.svg)
+  .options
+    margin-top: 20px
+    padding-left: 20px
+    padding-right: 20px
+    .option
+      text-transform: uppercase
+      vertical-align: middle
+      letter-spacing: .8px
+      position: relative
+      line-height: 18px
+      font-size: 14px
+      border-bottom: 1px solid #efefef
+      padding: 15px 0
+      &:first-of-type
+        border-top: 1px solid #efefef
 .drag-target
   height: 100vh
   width: 10px
