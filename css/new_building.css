@@ -571,6 +571,16 @@ input {
 .toast {
   opacity: 1 !important; }
 
+.side-nav .logo {
+  display: inline-block;
+  height: 40px;
+  width: 160px;
+  margin-left: 20px;
+  margin-top: 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/logo.svg); }
+
 #faq {
   border-top: 1px solid #d9d9d9;
   margin-top: 40px; }
