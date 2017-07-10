@@ -574,7 +574,7 @@ input {
 .side-nav {
   padding: 0;
   position: fixed;
-  width: 300px;
+  width: 270px;
   left: 0;
   top: 0;
   margin: 0;
@@ -612,6 +612,34 @@ input {
       padding: 15px 0; }
       .side-nav .options .option:first-of-type {
         border-top: 1px solid #efefef; }
+    .side-nav .options button {
+      margin-top: 30px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 1px;
+      border-radius: 6px !important;
+      padding: 10px 15px; }
+    .side-nav .options .phone {
+      margin-top: 10px;
+      border: 1px solid #a6a6a6;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      padding: 13px 0 12px;
+      text-align: center;
+      border-radius: 6px;
+      line-height: 17px;
+      font-size: 14px; }
+      .side-nav .options .phone * {
+        color: #222; }
+      .side-nav .options .phone a {
+        text-decoration: none; }
+        .side-nav .options .phone a img {
+          vertical-align: middle; }
+      .side-nav .options .phone img {
+        height: 20px;
+        width: 20px; }
 
 .drag-target {
   height: 100vh;
