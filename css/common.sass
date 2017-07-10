@@ -515,9 +515,40 @@ input
           display: inline-block
 .toast
   opacity: 1!important
+
+//side nav
 .side-nav
+  padding: 0
+  position: fixed
+  width: 300px
+  left: 0
+  top: 0
+  margin: 0
+  height: 100vh
+  height: -moz-calc(100%)
+  padding-bottom: 60px
+  background-color: #fff
+  z-index: 999
+  backface-visibility: hidden
+  overflow-y: auto
+  will-change: transform
+  backface-visibility: hidden
+  transform: translateX(-105%)
   .logo
     +logo()
     background-image: url(../img/logo.svg)
-
-//side nav
+.drag-target
+  height: 100vh
+  width: 10px
+  position: fixed
+  top: 0
+  z-index: 998
+#sidenav-overlay
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  height: 100vh
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 997
+  will-change: opacity
