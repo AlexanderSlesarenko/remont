@@ -943,6 +943,9 @@ input {
     #prices {
       text-align: center;
       display: block; } }
+  @media (max-width: 750px) {
+    #prices {
+      margin-top: 30px; } }
   #prices .item {
     width: 300px;
     padding: 30px 0;
@@ -961,6 +964,17 @@ input {
       #prices .item:nth-of-type(2) {
         margin-left: 5px;
         display: inline-block; } }
+    @media (max-width: 710px) {
+      #prices .item {
+        display: block !important;
+        width: 55%;
+        margin-left: auto !important;
+        margin-right: auto !important; }
+        #prices .item:nth-of-type(2) {
+          margin-top: 13px; } }
+    @media (max-width: 570px) {
+      #prices .item {
+        width: 300px; } }
     #prices .item .content {
       text-align: left;
       width: 100%; }
