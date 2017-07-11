@@ -293,6 +293,10 @@ body {
             margin-right: 0;
             margin-bottom: 5px;
             width: calc(100% - 30px); } }
+  @media (max-width: 700px) and (max-width: 370px) {
+    #top_block .top_form_wrapper .top_form input {
+      width: calc(80% - 30px); } }
+
       #top_block .top_form_wrapper .top_form button {
         height: 40px;
         font-size: 16px;
@@ -301,6 +305,9 @@ body {
         @media (max-width: 700px) {
           #top_block .top_form_wrapper .top_form button {
             width: 100%; } }
+        @media (max-width: 370px) {
+          #top_block .top_form_wrapper .top_form button {
+            width: 80%; } }
   #top_block .top_pointer_wrapper {
     margin-left: -100px;
     position: absolute;
@@ -357,7 +364,7 @@ body {
     @media (max-width: 750px) {
       .block .wrapper > .header {
         font-size: 25px;
-        line-height: 40px; } }
+        line-height: 25px; } }
   .block .wrapper > .sub_header {
     margin-top: 22px;
     padding: 0 80px;
