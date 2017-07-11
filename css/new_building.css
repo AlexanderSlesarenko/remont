@@ -393,6 +393,10 @@ body {
     font-size: 20px;
     letter-spacing: 0;
     line-height: 28px; }
+    @media (max-width: 750px) {
+      .block .wrapper > .sub_header {
+        font-size: 17px;
+        line-height: 28px; } }
     .block .wrapper > .sub_header.unlimited {
       padding: 0; }
 
