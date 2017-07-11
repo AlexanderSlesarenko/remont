@@ -760,7 +760,9 @@ input {
   position: relative;
   background: #fff;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 6px; }
+  border-radius: 6px;
+  padding-right: 10px;
+  padding-left: 10px; }
   @media (max-width: 953px) {
     #benefits .item {
       line-height: 190px;
@@ -776,6 +778,10 @@ input {
   @media (max-width: 500px) {
     #benefits .item {
       text-align: center; } }
+  @media (max-width: 450px) {
+    #benefits .item {
+      line-height: 180px;
+      height: 180px; } }
   #benefits .item .image_wrapper {
     margin-top: 16px;
     text-align: center; }
@@ -807,6 +813,10 @@ input {
     @media (max-width: 953px) {
       #benefits .item .content .header {
         margin-top: 0; } }
+    @media (max-width: 450px) {
+      #benefits .item .content .header {
+        font-size: 21px;
+        line-height: 20px; } }
   #benefits .item .content .descr {
     padding: 0 10px;
     font-size: 17px;
