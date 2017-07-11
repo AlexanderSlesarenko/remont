@@ -135,105 +135,111 @@ body {
     letter-spacing: 0.8px; }
 
 #top_block {
-  background: 50% 0 url(../img/1.jpg) no-repeat;
-  background-size: cover;
   position: relative;
   height: calc(100vh - 25px);
   min-height: 555px; }
-  #top_block .header .logo {
-    display: inline-block;
-    height: 40px;
-    width: 160px;
-    margin-left: 20px;
-    margin-top: 17px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img/logo_white.svg); }
-  #top_block .header .menu {
-    margin-right: 20px;
-    float: right; }
-    @media (max-width: 735px) {
-      #top_block .header .menu {
-        display: none; } }
-    #top_block .header .menu * {
-      font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
-      letter-spacing: 0.8px; }
-    #top_block .header .menu .menu_item {
+  #top_block .back_image {
+    height: 100%;
+    width: 100%;
+    background: 50% 0 url(../img/1.jpg) no-repeat;
+    background-size: cover;
+    position: absolute; }
+  #top_block .header {
+    position: relative; }
+    #top_block .header .logo {
       display: inline-block;
-      line-height: 61px;
-      font-size: 14px; }
-      #top_block .header .menu .menu_item.option {
-        margin-right: 20px; }
-        #top_block .header .menu .menu_item.option.phone * {
-          color: #222; }
-        #top_block .header .menu .menu_item.option.phone a {
-          text-decoration: none; }
-          #top_block .header .menu .menu_item.option.phone a img {
-            vertical-align: middle; }
-        #top_block .header .menu .menu_item.option.phone img {
-          height: 20px;
-          width: 20px; }
-        #top_block .header .menu .menu_item.option span {
-          cursor: pointer; }
-      #top_block .header .menu .menu_item button {
-        font-size: 14px;
-        line-height: 1.8;
-        margin-bottom: 1px;
-        border-radius: 6px !important;
-        padding: 5px 15px; }
-    #top_block .header .menu .menu_item.option:last-of-type {
-      margin-right: 0; }
-    #top_block .header .menu .menu_item.option * {
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
-    #top_block .header .menu .menu_item.option span {
-      color: #ffffff; }
-    #top_block .header .menu .menu_item.option.phone * {
-      color: #fae12e; }
-  #top_block .header .menu_mobile_icon {
-    margin-top: 6px;
-    margin-right: 6px;
-    transition: all 0.2s ease;
-    border-radius: 6px;
-    position: relative;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    z-index: 1;
-    display: none;
-    float: right; }
-    #top_block .header .menu_mobile_icon.active:before {
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      margin-top: -2px; }
-    #top_block .header .menu_mobile_icon.active:after {
-      transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      margin-top: -2px; }
-    #top_block .header .menu_mobile_icon:before {
-      margin-top: -7px;
+      height: 40px;
+      width: 160px;
+      margin-left: 20px;
+      margin-top: 17px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../img/logo_white.svg); }
+    #top_block .header .menu {
+      margin-right: 20px;
+      float: right; }
+      @media (max-width: 735px) {
+        #top_block .header .menu {
+          display: none; } }
+      #top_block .header .menu * {
+        font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+        letter-spacing: 0.8px; }
+      #top_block .header .menu .menu_item {
+        display: inline-block;
+        line-height: 61px;
+        font-size: 14px; }
+        #top_block .header .menu .menu_item.option {
+          margin-right: 20px; }
+          #top_block .header .menu .menu_item.option.phone * {
+            color: #222; }
+          #top_block .header .menu .menu_item.option.phone a {
+            text-decoration: none; }
+            #top_block .header .menu .menu_item.option.phone a img {
+              vertical-align: middle; }
+          #top_block .header .menu .menu_item.option.phone img {
+            height: 20px;
+            width: 20px; }
+          #top_block .header .menu .menu_item.option span {
+            cursor: pointer; }
+        #top_block .header .menu .menu_item button {
+          font-size: 14px;
+          line-height: 1.8;
+          margin-bottom: 1px;
+          border-radius: 6px !important;
+          padding: 5px 15px; }
+      #top_block .header .menu .menu_item.option:last-of-type {
+        margin-right: 0; }
+      #top_block .header .menu .menu_item.option * {
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
+      #top_block .header .menu .menu_item.option span {
+        color: #ffffff; }
+      #top_block .header .menu .menu_item.option.phone * {
+        color: #fae12e; }
+    #top_block .header .menu_mobile_icon {
+      margin-top: 6px;
+      margin-right: 6px;
       transition: all 0.2s ease;
-      position: absolute;
-      margin-left: -13px;
-      content: "";
-      width: 26px;
-      height: 4px;
-      left: 50%;
-      top: 50%; }
-    #top_block .header .menu_mobile_icon:after {
-      margin-top: 3px;
-      transition: all 0.2s ease;
-      position: absolute;
-      margin-left: -13px;
-      content: "";
-      width: 26px;
-      height: 4px;
-      left: 50%;
-      top: 50%; }
-    @media (max-width: 735px) {
-      #top_block .header .menu_mobile_icon {
-        display: inline-block; } }
-    #top_block .header .menu_mobile_icon:before, #top_block .header .menu_mobile_icon:after {
-      background-color: #fff; }
+      border-radius: 6px;
+      position: relative;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+      z-index: 1;
+      display: none;
+      float: right; }
+      #top_block .header .menu_mobile_icon.active:before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin-top: -2px; }
+      #top_block .header .menu_mobile_icon.active:after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin-top: -2px; }
+      #top_block .header .menu_mobile_icon:before {
+        margin-top: -7px;
+        transition: all 0.2s ease;
+        position: absolute;
+        margin-left: -13px;
+        content: "";
+        width: 26px;
+        height: 4px;
+        left: 50%;
+        top: 50%; }
+      #top_block .header .menu_mobile_icon:after {
+        margin-top: 3px;
+        transition: all 0.2s ease;
+        position: absolute;
+        margin-left: -13px;
+        content: "";
+        width: 26px;
+        height: 4px;
+        left: 50%;
+        top: 50%; }
+      @media (max-width: 735px) {
+        #top_block .header .menu_mobile_icon {
+          display: inline-block; } }
+      #top_block .header .menu_mobile_icon:before, #top_block .header .menu_mobile_icon:after {
+        background-color: #fff; }
   #top_block .content {
     position: relative;
     margin: 0 auto;

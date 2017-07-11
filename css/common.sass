@@ -147,12 +147,17 @@ body
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
     letter-spacing: .8px
 #top_block
-  background: 50% 0 url(../img/1.jpg) no-repeat
-  background-size: cover
   position: relative
   height: calc(100vh - 25px)
   min-height: 555px
+  .back_image
+    height: 100%
+    width: 100%
+    background: 50% 0 url(../img/1.jpg) no-repeat
+    background-size: cover
+    position: absolute
   .header
+    position: relative
     .logo
       +logo()
       background-image: url(../img/logo_white.svg)
