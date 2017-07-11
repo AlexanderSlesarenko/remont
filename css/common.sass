@@ -553,11 +553,26 @@ input
   .bottom_form
     input
       margin-right: 5px
+      @media (max-width: 652px)
+        display: block
+        width: 250px
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: 10px
+      @media (max-width: 363px)
+        width: 220px
     button
       height: 40px
       font-size: 16px
       padding-left: 16px
       padding-right: 16px
+      @media (max-width: 652px)
+        display: block
+        width: 280px
+        margin-right: auto
+        margin-left: auto
+      @media (max-width: 363px)
+        width: 250px
 .block
   &.footer
     background-color: #383838
