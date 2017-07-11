@@ -260,6 +260,9 @@ body {
       #top_block .content {
         max-width: 510px;
         padding-top: 50px; } }
+    @media (max-width: 567px) {
+      #top_block .content {
+        width: 80%; } }
     #top_block .content .moto * {
       color: #fff;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
