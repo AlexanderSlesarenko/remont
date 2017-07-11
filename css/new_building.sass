@@ -146,6 +146,14 @@
     width: 100%
     &.active
       opacity: 1
+#slider_mobile
+  display: none
+  @media (max-width: 969px)
+    display: block
+  li
+    display: none
+    &.active
+      display: block
 #prices
   margin-top: 60px
   display: -webkit-flex

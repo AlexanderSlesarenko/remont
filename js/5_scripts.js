@@ -55,13 +55,15 @@ function set_accordion() {
     }
 }
 function set_slider_buttons_click_listener() {
-  $("#slider_buttons .item:first-of-type, #slider img:first-of-type").addClass('active');
+  $("#slider_buttons .item:first-of-type, #slider img:first-of-type, #slider_mobile li[data-name='1']").addClass('active');
   $("#slider_buttons .item").click(function(event) {
     if ($(this).hasClass('active')) return;
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
     $('#slider img.active').removeClass('active');
+    $('#slider_mobile li.active').removeClass('active');
     $('#slider img[src="img/slider_' + $(this).data('name') + '.jpg"]').addClass('active');
+    $('#slider_mobile li[data-name="' + $(this).data('name') + '"]').addClass('active');
   });
 }
 function set_scroll_down() {

@@ -905,6 +905,16 @@ input {
     #slider img.active {
       opacity: 1; }
 
+#slider_mobile {
+  display: none; }
+  @media (max-width: 969px) {
+    #slider_mobile {
+      display: block; } }
+  #slider_mobile li {
+    display: none; }
+    #slider_mobile li.active {
+      display: block; }
+
 #prices {
   margin-top: 60px;
   display: -webkit-flex;
