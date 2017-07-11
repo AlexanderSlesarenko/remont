@@ -397,7 +397,9 @@ body {
     line-height: 28px; }
     @media (max-width: 933px) {
       .block .wrapper > .sub_header {
-        text-align: left; } }
+        text-align: left; }
+        .block .wrapper > .sub_header.center {
+          text-align: center; } }
     @media (max-width: 750px) {
       .block .wrapper > .sub_header {
         font-size: 17px;
