@@ -727,6 +727,7 @@ input {
   border-radius: 6px; }
   @media (max-width: 953px) {
     #benefits .item {
+      line-height: 190px;
       height: 190px;
       width: 500px;
       display: block;
@@ -738,6 +739,7 @@ input {
     text-align: center; }
     @media (max-width: 953px) {
       #benefits .item .image_wrapper {
+        margin-left: 30px;
         margin-top: 0;
         display: inline-block;
         float: left;
@@ -746,6 +748,7 @@ input {
           vertical-align: middle; } }
   @media (max-width: 953px) {
     #benefits .item .content {
+      vertical-align: middle;
       display: inline-block; } }
   #benefits .item .content .header {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
@@ -756,6 +759,9 @@ input {
     line-height: 33px;
     margin-bottom: 10px;
     margin-top: 10px; }
+    @media (max-width: 953px) {
+      #benefits .item .content .header {
+        margin-top: 0; } }
   #benefits .item .content .descr {
     padding: 0 10px;
     font-size: 17px;
