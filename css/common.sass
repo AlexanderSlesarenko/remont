@@ -156,6 +156,12 @@ body
     background: 50% 0 url(../img/1.jpg) no-repeat
     background-size: cover
     position: absolute
+    @media (max-width: 600px)
+      -webkit-filter: blur(2px)
+      -moz-filter: blur(2px)
+      -o-filter: blur(2px)
+      -ms-filter: blur(2px)
+      filter: blur(2px)
   .header
     position: relative
     .logo
@@ -216,13 +222,25 @@ body
       box-shadow: 0 1px 2px 0 rgba(0,0,0,.25)
       text-align: center
       border-radius: 6px
+      @media (max-width: 700px)
+        background-color: transparent
+        border: none
+        box-shadow: none
+        width: 350px
       input
         margin-right: 20px
+        @media (max-width: 700px)
+          border: none
+          margin-right: 0
+          margin-bottom: 5px
+          width: calc(100% - 30px)
       button
         height: 40px
         font-size: 16px
         padding-left: 16px
         padding-right: 16px
+        @media (max-width: 700px)
+          width: 100%
   .top_pointer_wrapper
     margin-left: -100px
     position: absolute

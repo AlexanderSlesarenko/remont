@@ -144,6 +144,13 @@ body {
     background: 50% 0 url(../img/1.jpg) no-repeat;
     background-size: cover;
     position: absolute; }
+    @media (max-width: 600px) {
+      #top_block .back_image {
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px); } }
   #top_block .header {
     position: relative; }
     #top_block .header .logo {
@@ -269,13 +276,28 @@ body {
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
       text-align: center;
       border-radius: 6px; }
+      @media (max-width: 700px) {
+        #top_block .top_form_wrapper .top_form {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          width: 350px; } }
       #top_block .top_form_wrapper .top_form input {
         margin-right: 20px; }
+        @media (max-width: 700px) {
+          #top_block .top_form_wrapper .top_form input {
+            border: none;
+            margin-right: 0;
+            margin-bottom: 5px;
+            width: calc(100% - 30px); } }
       #top_block .top_form_wrapper .top_form button {
         height: 40px;
         font-size: 16px;
         padding-left: 16px;
         padding-right: 16px; }
+        @media (max-width: 700px) {
+          #top_block .top_form_wrapper .top_form button {
+            width: 100%; } }
   #top_block .top_pointer_wrapper {
     margin-left: -100px;
     position: absolute;
