@@ -343,6 +343,10 @@ body {
   margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 65px; }
+  @media (max-width: 750px) {
+    .block .wrapper {
+      padding-top: 40px;
+      padding-bottom: 30px; } }
   .block .wrapper > .header {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     text-align: center;
