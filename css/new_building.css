@@ -354,6 +354,10 @@ body {
     letter-spacing: 0;
     font-size: 40px;
     margin: 0; }
+    @media (max-width: 750px) {
+      .block .wrapper > .header {
+        font-size: 25px;
+        line-height: 40px; } }
   .block .wrapper > .sub_header {
     margin-top: 22px;
     padding: 0 80px;
