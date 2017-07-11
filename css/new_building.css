@@ -734,6 +734,12 @@ input {
       margin-left: auto !important;
       margin-right: auto !important;
       margin-bottom: 10px; } }
+  @media (max-width: 530px) {
+    #benefits .item {
+      width: 90%; } }
+  @media (max-width: 500px) {
+    #benefits .item {
+      text-align: center; } }
   #benefits .item .image_wrapper {
     margin-top: 16px;
     text-align: center; }
@@ -746,6 +752,9 @@ input {
         line-height: 190px; }
         #benefits .item .image_wrapper img {
           vertical-align: middle; } }
+    @media (max-width: 500px) {
+      #benefits .item .image_wrapper {
+        display: none; } }
   @media (max-width: 953px) {
     #benefits .item .content {
       vertical-align: middle;
