@@ -157,11 +157,11 @@ body
     background-size: cover
     position: absolute
     @media (max-width: 600px)
-      -webkit-filter: blur(2px)
-      -moz-filter: blur(2px)
-      -o-filter: blur(2px)
-      -ms-filter: blur(2px)
-      filter: blur(2px)
+      -webkit-filter: blur(5px)
+      -moz-filter: blur(5px)
+      -o-filter: blur(5px)
+      -ms-filter: blur(5px)
+      filter: blur(5px)
   .header
     position: relative
     .logo
@@ -215,6 +215,8 @@ body
     left: 0
     right: 0
     text-align: center
+    @media (max-width: 700px)
+      bottom: 60px
     .top_form
       display: inline-block
       background: hsla(0,0%,100%,.95)
@@ -226,7 +228,7 @@ body
         background-color: transparent
         border: none
         box-shadow: none
-        width: 350px
+        width: 300px
       input
         margin-right: 20px
         @media (max-width: 700px)

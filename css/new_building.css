@@ -146,11 +146,11 @@ body {
     position: absolute; }
     @media (max-width: 600px) {
       #top_block .back_image {
-        -webkit-filter: blur(2px);
-        -moz-filter: blur(2px);
-        -o-filter: blur(2px);
-        -ms-filter: blur(2px);
-        filter: blur(2px); } }
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px); } }
   #top_block .header {
     position: relative; }
     #top_block .header .logo {
@@ -269,6 +269,9 @@ body {
     left: 0;
     right: 0;
     text-align: center; }
+    @media (max-width: 700px) {
+      #top_block .top_form_wrapper {
+        bottom: 60px; } }
     #top_block .top_form_wrapper .top_form {
       display: inline-block;
       background: rgba(255, 255, 255, 0.95);
@@ -281,7 +284,7 @@ body {
           background-color: transparent;
           border: none;
           box-shadow: none;
-          width: 350px; } }
+          width: 300px; } }
       #top_block .top_form_wrapper .top_form input {
         margin-right: 20px; }
         @media (max-width: 700px) {
