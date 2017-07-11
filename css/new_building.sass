@@ -99,6 +99,12 @@
     display: block
     -webkit-column-count: 2
     column-count: 2
+    column-gap: 10px
+    width: 80%
+    margin-right: auto
+    margin-left: auto
+  @media (max-width: 600px)
+    width: 90%
   .item
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
     transition: background-color .3s ease, border-color .3s ease
@@ -115,7 +121,8 @@
     color: #222
     width: 100%
     @media (max-width: 969px)
-      margin: 0 0 10px!important
+      margin: 0 0 10px
+      border-radius: 6px!important
     &:first-of-type
       border-radius: 8px 0 0 8px
     &:last-of-type
