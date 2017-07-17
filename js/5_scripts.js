@@ -22,11 +22,11 @@ var handler = onVisibilityChange($('#slider_buttons'), function(visible) {
     if (visible) {
         intervalID = setInterval(function(){
             if ($("#slider_buttons .item.active").next().length) {
-                $("#slider_buttons .item.active").next().click();
+                $("#slider_buttons .item.active").next().trigger('auto_click');
             } else {
-                $("#slider_buttons .item:first-of-type").click();
+                $("#slider_buttons .item:first-of-type").trigger('auto_click');
             }
-        }, 1000);
+        }, 2000);
     } else {
         clearInterval(intervalID);
     }
@@ -95,15 +95,22 @@ function set_accordion() {
     }
 }
 function set_slider_buttons_click_listener() {
-  $("#slider_buttons .item:first-of-type, #slider img:first-of-type, #slider_mobile li[data-name='1']").addClass('active');
-  $("#slider_buttons .item").click(function(event) {
-    if ($(this).hasClass('active')) return;
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
+  function click_callback(that) {
+    if ($(that).hasClass('active')) return;
+    $(that).addClass('active');
+    $(that).siblings().removeClass('active');
     $('#slider img.active').removeClass('active');
     $('#slider_mobile li.active').removeClass('active');
-    $('#slider img[src="img/slider_' + $(this).data('name') + '.jpg"]').addClass('active');
-    $('#slider_mobile li[data-name="' + $(this).data('name') + '"]').addClass('active');
+    $('#slider img[src="img/slider_' + $(that).data('name') + '.jpg"]').addClass('active');
+    $('#slider_mobile li[data-name="' + $(that).data('name') + '"]').addClass('active');
+  }
+  $("#slider_buttons .item:first-of-type, #slider img:first-of-type, #slider_mobile li[data-name='1']").addClass('active');
+  $("#slider_buttons .item").on('click', function() {
+      clearInterval(intervalID);
+      click_callback(this);
+  });
+  $("#slider_buttons .item").on('auto_click', function() {
+      click_callback(this);
   });
 }
 function set_scroll_down() {
