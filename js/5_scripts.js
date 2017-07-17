@@ -3,6 +3,7 @@ window.onbeforeunload = function () {
 };
 var nav_visible;
 var nav = $('#nav');
+var intervalID;
 
 $(document).ready(function(){
     set_float_nav();
@@ -15,7 +16,46 @@ $(document).ready(function(){
     set_slider_buttons_click_listener();
     personnel_transform();
     set_mobile_menu();
+    set_interval();
 });
+var handler = onVisibilityChange($('#slider_buttons'), function(visible) {
+    if (visible) {
+        intervalID = setInterval(function(){
+            if ($("#slider_buttons .item.active").next().length) {
+                $("#slider_buttons .item.active").next().click();
+            } else {
+                $("#slider_buttons .item:first-of-type").click();
+            }
+        }, 1000);
+    } else {
+        clearInterval(intervalID);
+    }
+});
+function isElementInViewport (el) {
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+}
+function onVisibilityChange(el, callback) {
+    var old_visible;
+    return function () {
+        var visible = isElementInViewport(el);
+        if (visible != old_visible) {
+            old_visible = visible;
+            callback(visible);
+        }
+    }
+}
+function set_interval() {
+    $(window).on('DOMContentLoaded load resize scroll', handler);
+}
 function set_mobile_menu() {
     $(".menu_mobile_icon").sideNav({
       menuWidth: 300,
