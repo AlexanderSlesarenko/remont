@@ -84,12 +84,14 @@ function set_accordion() {
 
     for (i = 0; i < acc.length; i++) {
       acc[i].onclick = function() {
+        $(this).siblings('.accordion_header.active').toggleClass('active');
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-          panel.style.maxHeight = null;
+        if ($(panel).css('max-height').indexOf('0') === 0){
+          $(panel).css('max-height', panel.scrollHeight);
+          $(panel).siblings('.accordion_content').css('max-height', 0);
         } else {
-          panel.style.maxHeight = panel.scrollHeight + 'px';
+          $(panel).css('max-height', 0);
         }
       }
     }
