@@ -142,7 +142,10 @@
   position: relative
   height: 500px
   @media (max-width: 969px)
-    display: none
+    width: calc(100% - 10px)
+    height: 51vw
+    margin-left: auto
+    margin-right: auto
   img
     opacity: 0
     position: absolute
@@ -151,29 +154,6 @@
     width: 100%
     &.active
       opacity: 1
-#slider_mobile
-  width: 60%
-  margin-left: auto
-  margin-right: auto
-  display: none
-  @media (max-width: 969px)
-    display: block
-  li
-    display: none
-    transition: all .4s ease
-    position: relative
-    padding: 0 0 5px 24px
-    line-height: 28px
-    margin-top: 20px
-    font-size: 20px
-    &.active
-      display: block
-    &:before
-      position: absolute
-      content: "\2014"
-      width: 24px
-      left: 0
-      top: 0
 #prices
   margin-top: 60px
   display: -webkit-flex
