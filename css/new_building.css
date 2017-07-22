@@ -1047,7 +1047,7 @@ input {
       text-align: center;
       display: block; } }
   #personnel .item {
-    height: 300px;
+    height: 335px;
     width: 300px;
     text-align: center;
     border-radius: 6px;
@@ -1086,9 +1086,13 @@ input {
       width: 160px;
       margin-top: 30px; }
     #personnel .item .descr {
-      display: inline-block;
-      margin-top: 16px;
-      font-size: 16px; }
+      margin-top: 10px;
+      padding: 0 20px; }
+      #personnel .item .descr .descr_header {
+        font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
+        margin-bottom: 7px; }
+      #personnel .item .descr .descr_content {
+        font-size: 15px; }
     #personnel .item:first-of-type .image {
       background-image: url(../img/worker_1.PNG); }
     #personnel .item:nth-of-type(2) .image {
