@@ -95,21 +95,50 @@
         margin: 0 auto
         text-align: center
 #slider_buttons
-  display: -webkit-flex
+  display: -webkit-box
+  display: -moz-box
   display: -ms-flexbox
+  display: -webkit-flex
   display: flex
   margin-top: 30px
   margin-bottom: 25px
   @media (max-width: 969px)
     display: block
-    -webkit-column-count: 2
-    column-count: 2
-    column-gap: 10px
     width: 80%
     margin-right: auto
     margin-left: auto
   @media (max-width: 600px)
     width: 90%
+  .first,
+  .second
+    width: 50%
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    @media (max-width: 969px)
+      width: 100%
+  .first
+    @media (max-width: 969px)
+      margin-bottom: 10px
+    .item
+      &:first-of-type
+        border-radius: 8px 0 0 8px
+        @media (max-width: 969px)
+          margin-right: 5px
+      &:last-of-type
+        @media (max-width: 969px)
+          margin-left: 5px
+  .second
+    .item
+      &:last-of-type
+        border-radius: 0 8px 8px 0
+        @media (max-width: 969px)
+          margin-left: 5px
+      &:first-of-type
+        @media (max-width: 969px)
+          margin-right: 5px
   .item
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
     transition: background-color .3s ease, border-color .3s ease
@@ -124,20 +153,15 @@
     cursor: pointer
     font-size: 14px
     color: #222
-    width: 100%
-    @media (max-width: 969px)
-      margin: 0 0 10px
-      border-radius: 6px!important
-    &:first-of-type
-      border-radius: 8px 0 0 8px
-    &:last-of-type
-      border-radius: 0 8px 8px 0
+    width: 50%
     &:hover
       background: #f8f8f8
     &.active
       border-color: #222!important
       color: #ffffff
       background-color: #222222
+    @media (max-width: 969px)
+      border-radius: 8px!important
 #slider
   position: relative
   height: 500px
@@ -266,6 +290,7 @@
     .descr
       margin-top: 10px
       padding: 0 20px
+      display: table
       .descr_header
         font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
         margin-bottom: 7px

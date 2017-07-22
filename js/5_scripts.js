@@ -16,7 +16,7 @@ $(document).ready(function(){
     set_slider_buttons_click_listener();
     personnel_transform();
     set_mobile_menu();
-    set_interval();
+    // set_interval();
 });
 var handler = onVisibilityChange($('#slider_buttons'), function(visible) {
     if (visible) {
@@ -99,14 +99,14 @@ function set_accordion() {
 function set_slider_buttons_click_listener() {
   function click_callback(that) {
     if ($(that).hasClass('active')) return;
+    $('#slider_buttons .item.active').removeClass('active');
     $(that).addClass('active');
-    $(that).siblings().removeClass('active');
     $('#slider img.active').removeClass('active');
     $('#slider_mobile li.active').removeClass('active');
     $('#slider img[src="img/slider_' + $(that).data('name') + '.jpg"]').addClass('active');
     $('#slider_mobile li[data-name="' + $(that).data('name') + '"]').addClass('active');
   }
-  $("#slider_buttons .item:first-of-type, #slider img:first-of-type, #slider_mobile li[data-name='1']").addClass('active');
+  $("#slider_buttons .first .item:first-of-type, #slider img:first-of-type, #slider_mobile li[data-name='1']").addClass('active');
   $("#slider_buttons .item").on('click', function() {
       clearInterval(intervalID);
       click_callback(this);
