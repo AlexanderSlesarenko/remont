@@ -934,18 +934,18 @@ input {
     border-radius: 8px 0 0 8px; }
     @media (max-width: 969px) {
       #slider_buttons .first .item:first-of-type {
-        margin-right: 5px; } }
+        margin-right: 4.5px; } }
   @media (max-width: 969px) {
     #slider_buttons .first .item:last-of-type {
-      margin-left: 5px; } }
+      margin-left: 4.5px; } }
   #slider_buttons .second .item:last-of-type {
     border-radius: 0 8px 8px 0; }
     @media (max-width: 969px) {
       #slider_buttons .second .item:last-of-type {
-        margin-left: 5px; } }
+        margin-left: 4.5px; } }
   @media (max-width: 969px) {
     #slider_buttons .second .item:first-of-type {
-      margin-right: 5px; } }
+      margin-right: 4.5px; } }
   #slider_buttons .item {
     font-family: "MuseoSansBold", Helvetica, Arial, sans-serif;
     transition: background-color 0.3s ease, border-color 0.3s ease;
