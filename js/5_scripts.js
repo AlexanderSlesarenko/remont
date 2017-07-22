@@ -16,16 +16,19 @@ $(document).ready(function(){
     set_slider_buttons_click_listener();
     personnel_transform();
     set_mobile_menu();
-    // set_interval();
+    set_interval();
 });
 var handler = onVisibilityChange($('#slider_buttons'), function(visible) {
     if (visible) {
-        intervalID = setInterval(function(){
-            if ($("#slider_buttons .item.active").next().length) {
-                $("#slider_buttons .item.active").next().trigger('auto_click');
+        intervalID = setInterval(function() {
+            var next;
+            var current = $("#slider_buttons .item.active").data('name');
+            if (current === 4) {
+                next = 1;
             } else {
-                $("#slider_buttons .item:first-of-type").trigger('auto_click');
+                next = current + 1;
             }
+            $('#slider_buttons .item[data-name="' + next + '"]').trigger('auto_click');
         }, 2000);
     } else {
         clearInterval(intervalID);
