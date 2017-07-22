@@ -141,7 +141,7 @@ body {
   #top_block .back_image {
     height: 100%;
     width: 100%;
-    background: 50% 0 url(../img/1.jpg) no-repeat;
+    background: 50% 0 url(../img/novostrojki/1.jpg) no-repeat;
     background-size: cover;
     position: absolute; }
     @media (max-width: 600px) {
@@ -1157,4 +1157,4 @@ input {
 .block.faq > .wrapper {
   padding-top: 30px; }
 
-/*# sourceMappingURL=new_building.css.map */
+/*# sourceMappingURL=novostrojki.css.map */
