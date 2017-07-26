@@ -535,7 +535,8 @@ input {
   to {
     top: 0; } }
 #telegram_link_chat,
-#vk_link_chat {
+#vk_link_chat,
+#whatsapp_link_chat {
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -551,13 +552,16 @@ input {
   color: #fff; }
   @media (max-width: 640px) {
     #telegram_link_chat,
-    #vk_link_chat {
+    #vk_link_chat,
+    #whatsapp_link_chat {
       margin-bottom: 10px; } }
   #telegram_link_chat *,
-  #vk_link_chat * {
+  #vk_link_chat *,
+  #whatsapp_link_chat * {
     vertical-align: middle; }
   #telegram_link_chat img,
-  #vk_link_chat img {
+  #vk_link_chat img,
+  #whatsapp_link_chat img {
     margin-right: 10px;
     height: 24px;
     width: 24px; }
@@ -571,6 +575,11 @@ input {
   background: #5c81b3; }
   #vk_link_chat:hover {
     background: #7f9cc3; }
+
+#whatsapp_link_chat {
+  background: #26b33d; }
+  #whatsapp_link_chat:hover {
+    background: #2bd045; }
 
 #vk_link,
 #instagram_link,
