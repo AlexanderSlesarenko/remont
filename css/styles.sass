@@ -701,3 +701,349 @@ input
   background-color: rgba(0, 0, 0, 0.5)
   z-index: 997
   will-change: opacity
+
+#faq
+  border-top: 1px solid #d9d9d9
+  margin-top: 40px
+  @media (max-width: 969px)
+    margin-top: 30px
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+#benefits
+  .top,
+  .bottom
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    @media (max-width: 953px)
+      display: block
+  .bottom
+    margin-top: 20px
+    @media (max-width: 953px)
+      margin-top: 0
+    .item
+      &:first-of-type
+        margin-left: 160px
+      &:last-of-type
+        margin-right: 160px
+        @media (max-width: 953px)
+          margin-bottom: 0
+  .item
+    height: 280px
+    width: 300px
+    display: inline-block
+    vertical-align: top
+    position: relative
+    background: #fff
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.2)
+    border-radius: 6px
+    @media (max-width: 953px)
+      line-height: 190px
+      height: 190px
+      width: 500px
+      display: block
+      margin-left: auto!important
+      margin-right: auto!important
+      margin-bottom: 10px
+    @media (max-width: 530px)
+      width: 90%
+      padding-right: 10px
+      padding-left: 10px
+    @media (max-width: 500px)
+      text-align: center
+    @media (max-width: 450px)
+      line-height: 180px
+      height: 180px
+    .image_wrapper
+      margin-top: 19px
+      text-align: center
+      @media (max-width: 953px)
+        margin-right: 5px
+        margin-left: 30px
+        margin-top: 0
+        display: inline-block
+        float: left
+        line-height: 190px
+        img
+          vertical-align: middle
+      @media (max-width: 500px)
+        display: none
+    .content
+      @media (max-width: 953px)
+        vertical-align: middle
+        display: inline-block
+      .header
+        font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
+        max-width: 270px
+        text-align: center
+        margin: 0 auto
+        font-size: 21px
+        line-height: 26px
+        margin-bottom: 10px
+        margin-top: 10px
+        @media (max-width: 953px)
+          margin-top: 0
+        @media (max-width: 450px)
+          font-size: 21px
+          line-height: 20px
+      .descr
+        padding: 0 10px
+        font-size: 17px
+        line-height: 26px
+        max-width: 320px
+        margin: 0 auto
+        text-align: center
+        .middle_screen
+          display: none
+          @media (max-width: 953px)
+            display: block
+        .large_screen
+          @media (max-width: 953px)
+            display: none
+
+#slider_buttons
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  margin-top: 30px
+  margin-bottom: 25px
+  @media (max-width: 969px)
+    display: block
+    width: 80%
+    margin-right: auto
+    margin-left: auto
+    br
+      display: none
+  @media (max-width: 600px)
+    width: 90%
+  .first,
+  .second
+    width: 50%
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    @media (max-width: 969px)
+      width: 100%
+  .first
+    @media (max-width: 969px)
+      margin-bottom: 10px
+    .item
+      &:first-of-type
+        border-radius: 8px 0 0 8px
+        @media (max-width: 969px)
+          margin-right: 4.5px
+      &:last-of-type
+        @media (max-width: 969px)
+          margin-left: 4.5px
+  .second
+    .item
+      &:last-of-type
+        border-radius: 0 8px 8px 0
+        @media (max-width: 969px)
+          margin-left: 4.5px
+      &:first-of-type
+        @media (max-width: 969px)
+          margin-right: 4.5px
+  .item
+    font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
+    transition: background-color .3s ease, border-color .3s ease
+    border: 1px solid #d9d9d9
+    padding: 12px 0 11px
+    background: #fff
+    margin: 0 0 0 -1px
+    position: relative
+    text-align: center
+    cursor: pointer
+    font-size: 17px
+    color: #222
+    width: 50%
+    &:hover
+      background: #f8f8f8
+    &.active
+      border-color: #222!important
+      color: #ffffff
+      background-color: #222222
+    @media (max-width: 969px)
+      border-radius: 8px!important
+    @media (max-width: 660px)
+      font-size: 16px
+    @media (max-width: 530px)
+      font-size: 15px
+    @media (max-width: 484px)
+      br
+        display: block
+    @media (max-width: 349px)
+      font-size: 14px
+#slider
+  position: relative
+  height: 500px
+  @media (max-width: 969px)
+    width: calc(100% - 10px)
+    height: 51vw
+    margin-left: auto
+    margin-right: auto
+  img
+    opacity: 0
+    position: absolute
+    transition: all .3s ease
+    border-radius: 8px
+    width: 100%
+    &.active
+      opacity: 1
+#prices
+  margin-top: 50px
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  @media (max-width: 953px)
+    text-align: center
+    display: block
+  @media (max-width: 750px)
+    margin-top: 30px
+  .item
+    width: 300px
+    padding: 30px 0
+    border: 1px solid #d9d9d9
+    border-radius: 6px
+    background: rgba(247, 247, 247, 0.5)
+    @media (max-width: 953px)
+      &:last-of-type
+        margin-top: 13px
+        display: block
+        margin-left: auto
+        margin-right: auto
+      &:first-of-type
+        margin-right: 5px
+        display: inline-block
+      &:nth-of-type(2)
+        margin-left: 5px
+        display: inline-block
+    @media (max-width: 710px)
+      display: block!important
+      width: 55%
+      margin-left: auto!important
+      margin-right: auto!important
+      &:nth-of-type(2)
+        margin-top: 13px
+    @media (max-width: 570px)
+      width: 300px
+    .content
+      text-align: left
+      width: 100%
+      .price
+        padding: 0 30px
+        .value
+          margin-right: 8px
+          margin-left: 8px
+          font-size: 40px
+          line-height: 1em
+          font-weight: 900
+      .descr
+        font-size: 26px
+        line-height: 1.538em
+        padding: 0 30px
+        margin-top: 10px
+      .details
+        padding: 0 30px
+        margin: 15px 0
+      button
+        width: 240px
+        font-size: 16px
+        height: 40px
+        margin: 0 30px
+#personnel
+  margin-top: 50px
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  @media (max-width: 953px)
+    margin-top: 35px
+    text-align: center
+    display: block
+  .item
+    height: 335px
+    width: 300px
+    text-align: center
+    border-radius: 6px
+    border: 1px solid #d9d9d9
+    @media (max-width: 710px)
+      display: block!important
+      width: 55%
+      margin-left: auto!important
+      margin-right: auto!important
+      &:nth-of-type(2)
+        margin-top: 13px
+    @media (max-width: 570px)
+      width: 300px
+    .header
+      font-size: 14px
+      font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
+      line-height: 40px
+      text-transform: uppercase
+      letter-spacing: .8px
+      border-bottom: 1px solid #d9d9d9
+      background: hsla(0,0%,97%,.5)
+      border-radius: 6px 6px 0 0
+    .image
+      background: 70% 0 no-repeat
+      background-size: 190px
+      border-radius: 100px
+      margin: 0 auto
+      opacity: 1
+      height: 160px
+      width: 160px
+      margin-top: 30px
+    .descr
+      margin-top: 10px
+      padding: 0 20px
+      display: table
+      .descr_header
+        font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
+        margin-bottom: 7px
+      .descr_content
+        font-size: 15px
+    &:first-of-type
+      .image
+        background-image: url(../img/worker_1.PNG)
+    &:nth-of-type(2)
+      .image
+        background-image: url(../img/worker_2.PNG)
+    &:last-of-type
+      .image
+        background-image: url(../img/worker_3.PNG)
+    transition: all .8s ease
+    -webkit-transform: scale(.7)
+    transform: scale(.7)
+    background: #f6f6f6
+    &.active
+      -webkit-transform: scale(1)
+      transform: scale(1)
+      background: #fff
+    @media (max-width: 953px)
+      &:last-of-type
+        margin-top: 13px
+        display: block
+        margin-left: auto
+        margin-right: auto
+      &:first-of-type
+        margin-right: 5px
+        display: inline-block
+      &:nth-of-type(2)
+        margin-left: 5px
+        display: inline-block
+.block.faq > .wrapper
+  padding-top: 30px
