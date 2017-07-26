@@ -363,7 +363,6 @@ body
       &:focus,
       &:active
         background-color: #f5bc00
-        background-color: #e6af00
   button
     vertical-align: baseline
     border-radius: 4px !important
@@ -399,56 +398,66 @@ body
       outline-offset: -2px
     &:active
       background-image: none
-
-input
-  padding: 0 15px
-  font-size: 15px
-  height: 40px
-  border: 1px solid rgba(0, 0, 0, 0.15)
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
-  transition: border-color ease-in-out .3s, box-shadow ease-in-out .3s
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
-  border-radius: 4px !important
-  &:hover
-    border-color: rgba(0, 0, 0, 0.3)
-  &:focus
-    border-color: #20a052
-    outline: 0
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(32,160,82,.64)
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(32,160,82,.64)
-
-.accordion_header
-  padding: 25px 0 25px 0
-  color: #20a052
-  line-height: 35px
-  font-size: 26px
-  cursor: pointer
-  width: 100%
-  text-align: left
-  transition: 0.3s
-  @media (max-width: 750px)
-    line-height: 24px
-    font-size: 21px
-    padding: 15px 0 15px 0
-  &:hover
-    color: #222
-  &:after
-    margin-top: 8px
-    content: ''
-    background: url(../img/common/button_arrow_down.svg) 0 0 no-repeat
-    float: right
-    width: 31px
-    height: 18px
-    -webkit-transition: -webkit-transform .3s ease-out
-    transition: transform .3s ease-out
+  input
+    padding: 0 15px
+    font-size: 15px
+    height: 40px
+    border: 1px solid rgba(0, 0, 0, 0.15)
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+    transition: border-color ease-in-out .3s, box-shadow ease-in-out .3s
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+    border-radius: 4px !important
+    &:hover
+      border-color: rgba(0, 0, 0, 0.3)
+  &.novostrojki
+    input
+      &:focus
+        border-color: #20a052
+        outline: 0
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(32,160,82,.64)
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(32,160,82,.64)
+  &.vtorichka
+    input
+      &:focus
+        border-color: #ffc228
+        outline: 0
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 194, 40, 0.64)
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 194, 40, 0.64)
+  .accordion_header
+    padding: 25px 0 25px 0
+    line-height: 35px
+    font-size: 26px
+    cursor: pointer
+    width: 100%
+    text-align: left
+    transition: 0.3s
     @media (max-width: 750px)
-      width: 19px
-  &.active
+      line-height: 24px
+      font-size: 21px
+      padding: 15px 0 15px 0
+    &:hover
+      color: #222
     &:after
-      transform: rotate(180deg)
-  div
-    display: inline-block
-    max-width: 85%
+      margin-top: 8px
+      content: ''
+      background: url(../img/common/button_arrow_down.svg) 0 0 no-repeat
+      float: right
+      width: 31px
+      height: 18px
+      -webkit-transition: -webkit-transform .3s ease-out
+      transition: transform .3s ease-out
+      @media (max-width: 750px)
+        width: 19px
+    &.active
+      &:after
+        transform: rotate(180deg)
+    div
+      display: inline-block
+      max-width: 85%
+  &.novostrojki
+    .accordion_header
+      color: #20a052
+
 .accordion_content
   border-bottom: 1px solid #d9d9d9
   background-color: white
