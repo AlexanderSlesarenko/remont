@@ -438,8 +438,6 @@ body
       line-height: 24px
       font-size: 21px
       padding: 15px 0 15px 0
-    &:hover
-      color: #222
     &:after
       margin-top: 8px
       content: ''
@@ -455,11 +453,20 @@ body
       &:after
         transform: rotate(180deg)
     div
+      transition: 0.3s
       display: inline-block
       max-width: 85%
   &.novostrojki
     .accordion_header
       color: #20a052
+      &:hover
+        div
+          color: #222
+  &.vtorichka
+    .accordion_header
+      &:hover
+        div
+          color: #d29e00
 
 .accordion_content
   border-bottom: 1px solid #d9d9d9
