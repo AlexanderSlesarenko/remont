@@ -370,6 +370,14 @@ body
       &:focus,
       &:active
         background-color: #f5bc00
+  &.chastnye_doma
+    button
+      color: #fff
+      background-color: #3b5998
+      &:hover,
+      &:focus,
+      &:active
+        background-color: #497bc8
   button
     vertical-align: baseline
     border-radius: 4px !important
@@ -430,6 +438,13 @@ body
         outline: 0
         -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 194, 40, 0.64)
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 194, 40, 0.64)
+  &.chastnye_doma
+    input
+      &:focus
+        border-color: #2c90cc
+        outline: 0
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(44, 144, 204, 0.64)
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(44, 144, 204, 0.64)
   .accordion_header
     padding: 25px 0 25px 0
     line-height: 35px
@@ -471,7 +486,12 @@ body
       &:hover
         div
           color: #d29e00
-
+  &.chastnye_doma
+    .accordion_header
+      color: #3b5998
+      &:hover
+        div
+          color: #222
 .accordion_content
   border-bottom: 1px solid #d9d9d9
   background-color: white
