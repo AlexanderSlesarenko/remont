@@ -235,7 +235,7 @@ body
           display: inline-block
       h1
         font-family: "MuseoSansBold", Helvetica, Arial, sans-serif
-      div
+      h2
         @media (max-width: 735px)
           font-size: 23px
           line-height: 23px
@@ -479,26 +479,32 @@ body
     &.active
       &:after
         transform: rotate(180deg)
-    div
+    h2
       transition: 0.3s
       display: inline-block
       max-width: 85%
+      font-weight: normal
+      font-size: 26px
+      margin: 0
+      @media (max-width: 750px)
+        line-height: 24px
+        font-size: 21px
   &.novostrojki
     .accordion_header
       color: #20a052
       &:hover
-        div
+        h2
           color: #222
   &.vtorichka
     .accordion_header
       &:hover
-        div
+        h2
           color: #d29e00
   &.chastnye_doma
     .accordion_header
       color: #3b5998
       &:hover
-        div
+        h2
           color: #222
 .accordion_content
   border-bottom: 1px solid #d9d9d9
