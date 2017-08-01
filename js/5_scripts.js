@@ -105,11 +105,9 @@ function set_slider_buttons_click_listener() {
     $('#slider_buttons .item.active').removeClass('active');
     $(that).addClass('active');
     $('#slider img.active').removeClass('active');
-    $('#slider_mobile li.active').removeClass('active');
-    $('#slider img[src*="slider_' + $(that).data('name') + '.jpg"]').addClass('active');
-    $('#slider_mobile li[data-name="' + $(that).data('name') + '"]').addClass('active');
+    $('#slider img[name="' + $(that).data('name') + '"]').addClass('active');
   }
-  $("#slider_buttons .first .item:first-of-type, #slider img:first-of-type, #slider_mobile li[data-name='1']").addClass('active');
+  $("#slider_buttons .first .item:first-of-type, #slider img:first-of-type").addClass('active');
   $("#slider_buttons .item").on('click', function() {
       clearInterval(intervalID);
       click_callback(this);
