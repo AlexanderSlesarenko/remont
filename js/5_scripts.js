@@ -4,6 +4,11 @@ window.onbeforeunload = function () {
 var nav_visible;
 var nav = $('#nav');
 var intervalID;
+var GOALS = {
+    novostrojki: 'yaCounter45554799.reachGoal',
+    vtorichka: 'yaCounter45554943.reachGoal',
+    chastnyedoma: 'yaCounter45554949.reachGoal',
+}
 
 $(document).ready(function(){
     set_float_nav();
@@ -175,6 +180,7 @@ function set_form_submit_listener() {
         $(that).find('input[name="phone"]').val('');
         $(that).find('button[type="submit"]').prop('disabled', false);
         toastr.success('Заявка успешно отправлена.');
+        eval(GOALS[page_type])('order');
 		return false;
 	});
 }
