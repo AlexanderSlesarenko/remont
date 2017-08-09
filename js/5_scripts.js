@@ -173,7 +173,8 @@ function set_form_submit_listener() {
             'https://script.google.com/macros/s/AKfycbw9iZeumDlu_sCtBHci8hp4Zf6S2EbK87ncis8J6t7fTWH4fYQ/exec',
 			{
 				name : name,
-				phone : phone
+				phone : phone,
+                site: page_type
 			}, function(){}
 		);
         $(that).find('input[name="name"]').val('');
