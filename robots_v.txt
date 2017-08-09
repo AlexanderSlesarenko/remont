@@ -1,1 +1,1 @@
-sitemap: vtorichka.remontique.ru/sitemap.xml
+sitemap: http://vtorichka.remontique.ru/sitemap.xml

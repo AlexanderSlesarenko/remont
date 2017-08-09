@@ -1,1 +1,1 @@
-sitemap: chastnyedoma.remontique.ru/sitemap.xml
+sitemap: http://chastnyedoma.remontique.ru/sitemap.xml
