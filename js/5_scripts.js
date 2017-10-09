@@ -22,6 +22,7 @@ $(document).ready(function(){
     personnel_transform();
     set_mobile_menu();
     set_interval();
+    set_examples();
 });
 var handler = onVisibilityChange($('#slider_buttons'), function(visible) {
     if (visible) {
@@ -127,6 +128,37 @@ function set_slider_buttons_click_listener() {
   $("#slider_buttons .item").on('auto_click', function() {
       click_callback(this);
   });
+}
+function set_examples() {
+    function set_examples_interval() {
+        interval = setInterval(function() {
+            current ++;
+            if (current > images_count) current = 1;
+            $('#examples img.active').removeClass('active');
+            $("#examples img[name=" + current + "]").addClass('active');
+        }, 1700);
+    }
+    $("#examples img:first-of-type").addClass('active');
+    var current = 1;
+    var images_count = $("#examples img").length;
+    var interval;
+    set_examples_interval();
+    $("#examples .right").on('click', function() {
+        clearInterval(interval);
+        current ++;
+        if (current > images_count) current = 1;
+        $('#examples img.active').removeClass('active');
+        $("#examples img[name=" + current + "]").addClass('active');
+        set_examples_interval();
+    });
+    $("#examples .left").on('click', function() {
+        clearInterval(interval);
+        current --;
+        if (current === 0) current = images_count;
+        $('#examples img.active').removeClass('active');
+        $("#examples img[name=" + current + "]").addClass('active');
+        set_examples_interval();
+    });
 }
 function set_scroll_down() {
   $(".top_pointer_wrapper").click(function() {
