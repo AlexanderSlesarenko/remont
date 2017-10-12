@@ -1,1 +1,2 @@
 sitemap: http://remontique.ru/sitemap.xml
+Host: http://remontique.ru

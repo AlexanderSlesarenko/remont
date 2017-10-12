@@ -1,1 +1,2 @@
 sitemap: http://chastnyedoma.remontique.ru/sitemap.xml
+Host: http://chastnyedoma.remontique.ru
