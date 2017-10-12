@@ -1,2 +1,2 @@
-sitemap: http://remontique.ru/sitemap.xml
-Host: http://remontique.ru
+sitemap: http://remontik-kvartir.ru/sitemap.xml
+Host: http://remontik-kvartir.ru

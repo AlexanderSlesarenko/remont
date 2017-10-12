@@ -1,2 +1,2 @@
-sitemap: http://vtorichka.remontique.ru/sitemap.xml
-Host: http://vtorichka.remontique.ru
+sitemap: http://vtorichka.remontik-kvartir.ru/sitemap.xml
+Host: http://vtorichka.remontik-kvartir.ru
