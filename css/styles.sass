@@ -714,6 +714,11 @@ body
           display: inline-block
           float: left
           line-height: 42px
+          @media (max-width: 500px)
+            margin-right: 0
+          @media (max-width: 485px)
+            line-height: 19px
+            width: 100%
           @media (max-width: 340px)
             font-size: 12px
             margin-right: 0
@@ -722,6 +727,13 @@ body
             line-height: 30px
             font-size: 13px
             text-decoration: none
+          .temp_br
+            display: none
+            @media (max-width: 485px)
+              display: block
+          .temp_divider
+            @media (max-width: 485px)
+              display: none
         .right
           display: inline-block
       .legal_info
@@ -1151,8 +1163,7 @@ body
     text-align: center
     display: block
   .item
-    height: 173px //temp
-    //height: 335px
+    height: 335px
     width: 300px
     text-align: center
     border-radius: 6px
@@ -1181,7 +1192,6 @@ body
       border-radius: 100px
       margin-top: 10px
     .descr
-      margin-top: 20px //temp
       padding: 0 20px
       display: table
       .descr_header
